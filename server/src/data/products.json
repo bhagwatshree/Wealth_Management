@@ -1,0 +1,28 @@
+[
+  [
+    "921d1408-2bf8-4573-9484-b1b0e5b77e94",
+    {
+      "productId": "921d1408-2bf8-4573-9484-b1b0e5b77e94",
+      "name": "Updated Name",
+      "shortName": "",
+      "category": "SAVINGS",
+      "type": "FIXED_DEPOSIT",
+      "description": "",
+      "currency": "KES",
+      "minInvestment": 0,
+      "maxInvestment": null,
+      "expectedReturn": null,
+      "riskLevel": "HIGH",
+      "tenor": null,
+      "navEnabled": false,
+      "fundManagerId": null,
+      "fundManagerName": "",
+      "fineractProductId": null,
+      "fineractProductType": null,
+      "status": "ACTIVE",
+      "metadata": {},
+      "createdAt": "2026-03-21T09:38:03.207Z",
+      "updatedAt": "2026-03-21T09:38:03.221Z"
+    }
+  ]
+]

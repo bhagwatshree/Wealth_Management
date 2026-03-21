@@ -1,0 +1,27 @@
+{
+  "name": "wealth-management-server",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "js-yaml": "^4.1.1",
+    "morgan": "^1.10.0",
+    "node-cron": "^4.2.1",
+    "ssh2-sftp-client": "^12.1.0",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "vitest": "^4.1.0"
+  }
+}

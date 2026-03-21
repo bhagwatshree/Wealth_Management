@@ -1,0 +1,159 @@
+# =============================================================================
+# Error Configuration — Wealth Management Platform
+# =============================================================================
+# All user-facing error messages are defined here.
+# NEVER include PII (names, emails, account numbers, IDs) in messages.
+# Use generic references like "the resource", "the record", etc.
+#
+# Structure:
+#   support:        Global support/contact info shown with every error
+#   httpErrors:     Messages keyed by HTTP status code
+#   fineractErrors: Messages keyed by Fineract error code prefix
+#   validationMap:  Maps Fineract parameter-level validation codes to friendly text
+#   fallback:       Default message when no specific mapping is found
+# =============================================================================
+
+support:
+  message: "If the issue persists, please contact support."
+  email: "support@wealthmgmt.com"
+  phone: "+1-800-555-0199"
+  hours: "Mon–Fri, 9 AM – 6 PM IST"
+
+fallback:
+  title: "Unexpected Error"
+  message: "Something went wrong while processing your request. Please try again."
+
+# ---------------------------------------------------------------------------
+# HTTP Status Code Mappings
+# ---------------------------------------------------------------------------
+httpErrors:
+  400:
+    title: "Invalid Request"
+    message: "The request contains invalid or missing information. Please review the form fields and try again."
+  401:
+    title: "Authentication Failed"
+    message: "Your session has expired or credentials are invalid. Please log in again."
+  403:
+    title: "Access Denied"
+    message: "You do not have permission to perform this action. Please verify your role and permissions."
+  404:
+    title: "Not Found"
+    message: "The requested resource could not be found. It may have been removed or the reference is incorrect."
+  409:
+    title: "Conflict"
+    message: "This operation conflicts with the current state. The resource may have been modified by another user."
+  422:
+    title: "Validation Error"
+    message: "The submitted data did not pass validation. Please correct the highlighted fields."
+  429:
+    title: "Too Many Requests"
+    message: "You have made too many requests in a short period. Please wait a moment and try again."
+  500:
+    title: "Server Error"
+    message: "An internal error occurred on the server. Our team has been notified."
+  502:
+    title: "Service Unavailable"
+    message: "The backend financial service is temporarily unavailable. Please try again in a few minutes."
+  503:
+    title: "Service Unavailable"
+    message: "The system is currently undergoing maintenance. Please try again later."
+  504:
+    title: "Request Timeout"
+    message: "The request took too long to complete. Please try again or reduce the scope of your query."
+
+# ---------------------------------------------------------------------------
+# Fineract-specific Error Code Mappings
+# Keyed by the globalisationCode prefix from Fineract error responses
+# ---------------------------------------------------------------------------
+fineractErrors:
+  "error.msg.office.duplicate":
+    title: "Duplicate Office"
+    message: "An office with this name already exists. Please use a different name."
+  "error.msg.staff.duplicate":
+    title: "Duplicate Staff"
+    message: "A staff member with these details already exists."
+  "error.msg.client.duplicate":
+    title: "Duplicate Client"
+    message: "A client record with these details already exists in the system."
+  "error.msg.product.duplicate":
+    title: "Duplicate Product"
+    message: "A product with this name or short name already exists."
+  "error.msg.charge.duplicate.name":
+    title: "Duplicate Charge"
+    message: "A charge with this name already exists."
+  "error.msg.fund.duplicate":
+    title: "Duplicate Fund"
+    message: "A fund with this name already exists."
+  "error.msg.glaccount.duplicate":
+    title: "Duplicate GL Account"
+    message: "A GL account with this code already exists."
+  "error.msg.glaccount.glcode.invalid":
+    title: "Invalid GL Code"
+    message: "The GL code provided is not valid. Please check the format."
+  "error.msg.journal.entry.invalid":
+    title: "Invalid Journal Entry"
+    message: "The journal entry data is invalid. Ensure debits and credits are balanced."
+  "error.msg.currency.duplicate":
+    title: "Duplicate Currency"
+    message: "This currency has already been configured in the system."
+  "error.msg.paymenttype.duplicate":
+    title: "Duplicate Payment Type"
+    message: "A payment type with this name already exists."
+  "error.msg.accounting.rule.duplicate":
+    title: "Duplicate Accounting Rule"
+    message: "An accounting rule with this name already exists."
+  "error.msg.glclosure.exists":
+    title: "Closure Already Exists"
+    message: "A GL closure already exists for this office and date combination."
+  "error.msg.resource.not.found":
+    title: "Resource Not Found"
+    message: "The requested record was not found. It may have been deleted."
+  "error.msg.not.authorized":
+    title: "Not Authorized"
+    message: "You are not authorized to perform this action."
+  "error.msg.validation":
+    title: "Validation Error"
+    message: "One or more fields have invalid values. Please review and correct them."
+
+# ---------------------------------------------------------------------------
+# Validation Parameter Mappings
+# Maps Fineract validation parameterName to user-friendly field labels
+# Used to build "Field X: error message" display
+# ---------------------------------------------------------------------------
+validationFieldLabels:
+  name: "Name"
+  shortName: "Short Name"
+  currencyCode: "Currency"
+  principal: "Principal Amount"
+  minPrincipal: "Minimum Principal"
+  maxPrincipal: "Maximum Principal"
+  numberOfRepayments: "Number of Repayments"
+  repaymentEvery: "Repayment Frequency"
+  interestRatePerPeriod: "Interest Rate"
+  nominalAnnualInterestRate: "Annual Interest Rate"
+  daysInYearType: "Days in Year"
+  daysInMonthType: "Days in Month"
+  isInterestRecalculationEnabled: "Interest Recalculation"
+  chargeAppliesTo: "Applies To"
+  chargeTimeType: "Charge Time"
+  chargeCalculationType: "Calculation Type"
+  amount: "Amount"
+  openingDate: "Opening Date"
+  officeId: "Office"
+  parentId: "Parent Office"
+  joiningDate: "Joining Date"
+  activationDate: "Activation Date"
+  firstname: "First Name"
+  lastname: "Last Name"
+  legalFormId: "Legal Form"
+  locale: "Locale"
+  dateFormat: "Date Format"
+  digitsAfterDecimal: "Decimal Places"
+  description: "Description"
+  externalId: "External ID"
+  accountingRule: "Accounting Rule"
+  glCode: "GL Code"
+  manualEntriesAllowed: "Manual Entries"
+  type: "Account Type"
+  usage: "Account Usage"
+  transactionProcessingStrategyCode: "Repayment Strategy"

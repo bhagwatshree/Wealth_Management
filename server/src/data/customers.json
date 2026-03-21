@@ -1,0 +1,65 @@
+[
+  [
+    "cust-230",
+    {
+      "profileId": "cust-230",
+      "customerId": "cust-230",
+      "lifecycleStatus": "ACTIVE",
+      "personalInfo": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john@example.com",
+        "mobileNo": ""
+      },
+      "kyc": null,
+      "screening": null,
+      "fineractClientId": null,
+      "tags": [],
+      "segment": "PREMIUM",
+      "createdAt": "2026-03-21T09:38:03.922Z",
+      "updatedAt": "2026-03-21T09:38:03.922Z"
+    }
+  ],
+  [
+    "cust-231",
+    {
+      "profileId": "cust-231",
+      "customerId": "cust-231",
+      "lifecycleStatus": "ACTIVE",
+      "personalInfo": {
+        "firstName": "Jane",
+        "lastName": "Smith",
+        "email": "jane@example.com",
+        "mobileNo": ""
+      },
+      "kyc": null,
+      "screening": null,
+      "fineractClientId": null,
+      "tags": [],
+      "segment": "STANDARD",
+      "createdAt": "2026-03-21T09:38:03.945Z",
+      "updatedAt": "2026-03-21T09:38:03.945Z"
+    }
+  ],
+  [
+    "cust-232",
+    {
+      "profileId": "cust-232",
+      "customerId": "cust-232",
+      "lifecycleStatus": "DORMANT",
+      "personalInfo": {
+        "firstName": "Bob",
+        "lastName": "Builder",
+        "email": "bob@example.com",
+        "mobileNo": ""
+      },
+      "kyc": null,
+      "screening": null,
+      "fineractClientId": null,
+      "tags": [],
+      "segment": "PREMIUM",
+      "createdAt": "2026-03-21T09:38:03.946Z",
+      "updatedAt": "2026-03-21T09:38:03.947Z"
+    }
+  ]
+]

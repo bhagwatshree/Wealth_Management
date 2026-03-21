@@ -1,0 +1,4849 @@
+[
+  [
+    "65723515-f55a-44c8-856c-137103fe3c0d",
+    {
+      "kycId": "65723515-f55a-44c8-856c-137103fe3c0d",
+      "customerId": "cust-001",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:02:30.020Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:02:30.025Z"
+    }
+  ],
+  [
+    "a4d47825-b629-497f-b4b6-7d82a9819dd2",
+    {
+      "kycId": "a4d47825-b629-497f-b4b6-7d82a9819dd2",
+      "customerId": "cust-002",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Jane"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:02:30.037Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:02:30.037Z"
+    }
+  ],
+  [
+    "3f551c89-5991-406c-a2e9-403b149d19da",
+    {
+      "kycId": "3f551c89-5991-406c-a2e9-403b149d19da",
+      "customerId": "fm-001",
+      "role": "FUND_MANAGER",
+      "status": "PENDING",
+      "data": {
+        "orgName": "FundCo"
+      },
+      "steps": [
+        {
+          "name": "Organization Verification",
+          "fields": [
+            "orgName",
+            "registrationNumber",
+            "cin"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Regulatory Compliance",
+          "fields": [
+            "sebiRegistration",
+            "amfiCode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Authorized Signatory",
+          "fields": [
+            "signatoryName",
+            "designation",
+            "authorityLetter"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "orgDocuments"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:02:30.076Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:02:30.076Z"
+    }
+  ],
+  [
+    "5dbe0d4d-e0a1-4f4a-8d76-76ac556831af",
+    {
+      "kycId": "5dbe0d4d-e0a1-4f4a-8d76-76ac556831af",
+      "customerId": "cust-010",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Alice"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:02:30.092Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:02:30.092Z"
+    }
+  ],
+  [
+    "b6f25e5e-d683-4c86-9b1b-efa2dd4706fc",
+    {
+      "kycId": "b6f25e5e-d683-4c86-9b1b-efa2dd4706fc",
+      "customerId": "cust-020",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Bob"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:02:30.110Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:02:30.110Z"
+    }
+  ],
+  [
+    "0972cf5d-5b1c-44d6-b235-8fd3b8537665",
+    {
+      "kycId": "0972cf5d-5b1c-44d6-b235-8fd3b8537665",
+      "customerId": "cust-020",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Bob"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:02:30.126Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:02:30.126Z"
+    }
+  ],
+  [
+    "adf1df85-0a6f-4fae-95c5-22157a370015",
+    {
+      "kycId": "adf1df85-0a6f-4fae-95c5-22157a370015",
+      "customerId": "cust-021",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Carol"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:02:30.128Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:02:30.128Z"
+    }
+  ],
+  [
+    "fb6b10cc-c33a-4f96-a6f2-ba7bda828ae5",
+    {
+      "kycId": "fb6b10cc-c33a-4f96-a6f2-ba7bda828ae5",
+      "customerId": "cust-030",
+      "role": "CUSTOMER",
+      "status": "VERIFIED",
+      "data": {
+        "firstName": "Dave",
+        "lastName": "Smith"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "COMPLETED"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:02:30.148Z",
+      "verifiedAt": "2026-03-21T09:02:30.172Z",
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:02:30.172Z"
+    }
+  ],
+  [
+    "4d07b312-d77a-4f2d-9159-948a2d6b46fe",
+    {
+      "kycId": "4d07b312-d77a-4f2d-9159-948a2d6b46fe",
+      "customerId": "cust-031",
+      "role": "CUSTOMER",
+      "status": "REJECTED",
+      "data": {
+        "firstName": "Eve"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:02:30.715Z",
+      "verifiedAt": null,
+      "rejectionReason": "Incomplete documents",
+      "updatedAt": "2026-03-21T09:02:30.719Z"
+    }
+  ],
+  [
+    "fca0d7a9-a039-4ebc-9bfa-9da43eb9e56f",
+    {
+      "kycId": "fca0d7a9-a039-4ebc-9bfa-9da43eb9e56f",
+      "customerId": "cust-001",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:04:26.276Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:04:26.279Z"
+    }
+  ],
+  [
+    "43ed0bbf-108d-4b1d-b087-420a3ac6d13d",
+    {
+      "kycId": "43ed0bbf-108d-4b1d-b087-420a3ac6d13d",
+      "customerId": "cust-002",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Jane"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:04:26.284Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:04:26.284Z"
+    }
+  ],
+  [
+    "1e29c417-2c4c-4457-9f7d-e5ae47ea2d6a",
+    {
+      "kycId": "1e29c417-2c4c-4457-9f7d-e5ae47ea2d6a",
+      "customerId": "fm-001",
+      "role": "FUND_MANAGER",
+      "status": "PENDING",
+      "data": {
+        "orgName": "FundCo"
+      },
+      "steps": [
+        {
+          "name": "Organization Verification",
+          "fields": [
+            "orgName",
+            "registrationNumber",
+            "cin"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Regulatory Compliance",
+          "fields": [
+            "sebiRegistration",
+            "amfiCode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Authorized Signatory",
+          "fields": [
+            "signatoryName",
+            "designation",
+            "authorityLetter"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "orgDocuments"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:04:26.293Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:04:26.293Z"
+    }
+  ],
+  [
+    "0fc233c7-0c9c-4d71-af48-47714dc0b0db",
+    {
+      "kycId": "0fc233c7-0c9c-4d71-af48-47714dc0b0db",
+      "customerId": "cust-010",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Alice"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:04:26.317Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:04:26.317Z"
+    }
+  ],
+  [
+    "40e74f36-9da6-4b7c-8ca4-e51d753710ed",
+    {
+      "kycId": "40e74f36-9da6-4b7c-8ca4-e51d753710ed",
+      "customerId": "cust-020",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Bob"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:04:26.339Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:04:26.339Z"
+    }
+  ],
+  [
+    "c1b974e8-1299-47b1-a395-679c053c823e",
+    {
+      "kycId": "c1b974e8-1299-47b1-a395-679c053c823e",
+      "customerId": "cust-020",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Bob"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:04:26.342Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:04:26.342Z"
+    }
+  ],
+  [
+    "f42d0fcf-c8a4-4b82-afcd-7983b173cf77",
+    {
+      "kycId": "f42d0fcf-c8a4-4b82-afcd-7983b173cf77",
+      "customerId": "cust-021",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Carol"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:04:26.344Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:04:26.344Z"
+    }
+  ],
+  [
+    "47d26de6-5c14-432e-8bb4-04ea1e05e44b",
+    {
+      "kycId": "47d26de6-5c14-432e-8bb4-04ea1e05e44b",
+      "customerId": "cust-030",
+      "role": "CUSTOMER",
+      "status": "VERIFIED",
+      "data": {
+        "firstName": "Dave",
+        "lastName": "Smith"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "COMPLETED"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:04:26.420Z",
+      "verifiedAt": "2026-03-21T09:04:26.432Z",
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:04:26.432Z"
+    }
+  ],
+  [
+    "1c3d23a3-d818-4c68-b629-157e8aecbabe",
+    {
+      "kycId": "1c3d23a3-d818-4c68-b629-157e8aecbabe",
+      "customerId": "cust-031",
+      "role": "CUSTOMER",
+      "status": "REJECTED",
+      "data": {
+        "firstName": "Eve"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:04:26.606Z",
+      "verifiedAt": null,
+      "rejectionReason": "Incomplete documents",
+      "updatedAt": "2026-03-21T09:04:26.610Z"
+    }
+  ],
+  [
+    "1e89c238-24cd-4f32-bcfe-f79b67060c45",
+    {
+      "kycId": "1e89c238-24cd-4f32-bcfe-f79b67060c45",
+      "customerId": "cust-001",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:07:58.668Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:07:58.672Z"
+    }
+  ],
+  [
+    "5e5d6b3c-19da-47c4-bb3f-879918192d61",
+    {
+      "kycId": "5e5d6b3c-19da-47c4-bb3f-879918192d61",
+      "customerId": "cust-002",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Jane"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:07:58.681Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:07:58.681Z"
+    }
+  ],
+  [
+    "50510dd0-b5fb-4d30-8e54-a66fb02ef124",
+    {
+      "kycId": "50510dd0-b5fb-4d30-8e54-a66fb02ef124",
+      "customerId": "fm-001",
+      "role": "FUND_MANAGER",
+      "status": "PENDING",
+      "data": {
+        "orgName": "FundCo"
+      },
+      "steps": [
+        {
+          "name": "Organization Verification",
+          "fields": [
+            "orgName",
+            "registrationNumber",
+            "cin"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Regulatory Compliance",
+          "fields": [
+            "sebiRegistration",
+            "amfiCode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Authorized Signatory",
+          "fields": [
+            "signatoryName",
+            "designation",
+            "authorityLetter"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "orgDocuments"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:07:58.711Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:07:58.711Z"
+    }
+  ],
+  [
+    "c112a282-0292-43ab-bc4f-a1388f3eda67",
+    {
+      "kycId": "c112a282-0292-43ab-bc4f-a1388f3eda67",
+      "customerId": "cust-010",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Alice"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:07:58.747Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:07:58.747Z"
+    }
+  ],
+  [
+    "37a3882b-d2bd-463f-9eee-29d1a2c9a8d7",
+    {
+      "kycId": "37a3882b-d2bd-463f-9eee-29d1a2c9a8d7",
+      "customerId": "cust-020",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Bob"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:07:58.779Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:07:58.779Z"
+    }
+  ],
+  [
+    "31bb484d-4966-40e5-bce7-34c0aaffa02b",
+    {
+      "kycId": "31bb484d-4966-40e5-bce7-34c0aaffa02b",
+      "customerId": "cust-020",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Bob"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:07:58.797Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:07:58.797Z"
+    }
+  ],
+  [
+    "e358af1a-1de2-466c-ab95-9a44fcf19ba8",
+    {
+      "kycId": "e358af1a-1de2-466c-ab95-9a44fcf19ba8",
+      "customerId": "cust-021",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Carol"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:07:58.800Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:07:58.800Z"
+    }
+  ],
+  [
+    "e1ab3380-b5bf-46cc-8d86-b96878e6a718",
+    {
+      "kycId": "e1ab3380-b5bf-46cc-8d86-b96878e6a718",
+      "customerId": "cust-030",
+      "role": "CUSTOMER",
+      "status": "VERIFIED",
+      "data": {
+        "firstName": "Dave",
+        "lastName": "Smith"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "COMPLETED"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:07:58.870Z",
+      "verifiedAt": "2026-03-21T09:07:58.892Z",
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:07:58.892Z"
+    }
+  ],
+  [
+    "9a722aa1-c191-48c7-afae-28ed24979fb1",
+    {
+      "kycId": "9a722aa1-c191-48c7-afae-28ed24979fb1",
+      "customerId": "cust-031",
+      "role": "CUSTOMER",
+      "status": "REJECTED",
+      "data": {
+        "firstName": "Eve"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:07:59.011Z",
+      "verifiedAt": null,
+      "rejectionReason": "Incomplete documents",
+      "updatedAt": "2026-03-21T09:07:59.013Z"
+    }
+  ],
+  [
+    "6f92b415-046e-4dbc-be17-4e97aaf0a005",
+    {
+      "kycId": "6f92b415-046e-4dbc-be17-4e97aaf0a005",
+      "customerId": "cust-001",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:19:49.896Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:19:49.898Z"
+    }
+  ],
+  [
+    "c7c53afa-42eb-4ff2-8bbe-99d27d0151db",
+    {
+      "kycId": "c7c53afa-42eb-4ff2-8bbe-99d27d0151db",
+      "customerId": "cust-002",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Jane"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:19:49.902Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:19:49.902Z"
+    }
+  ],
+  [
+    "c1ed2505-550f-46ad-bede-7fd58e3eb04a",
+    {
+      "kycId": "c1ed2505-550f-46ad-bede-7fd58e3eb04a",
+      "customerId": "fm-001",
+      "role": "FUND_MANAGER",
+      "status": "PENDING",
+      "data": {
+        "orgName": "FundCo"
+      },
+      "steps": [
+        {
+          "name": "Organization Verification",
+          "fields": [
+            "orgName",
+            "registrationNumber",
+            "cin"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Regulatory Compliance",
+          "fields": [
+            "sebiRegistration",
+            "amfiCode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Authorized Signatory",
+          "fields": [
+            "signatoryName",
+            "designation",
+            "authorityLetter"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "orgDocuments"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:19:49.924Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:19:49.924Z"
+    }
+  ],
+  [
+    "6835a68d-fc29-402b-ad2d-aca41c37e6e3",
+    {
+      "kycId": "6835a68d-fc29-402b-ad2d-aca41c37e6e3",
+      "customerId": "cust-010",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Alice"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:19:49.942Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:19:49.942Z"
+    }
+  ],
+  [
+    "b2598c68-df30-403f-9640-506b08a4d8a4",
+    {
+      "kycId": "b2598c68-df30-403f-9640-506b08a4d8a4",
+      "customerId": "cust-020",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Bob"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:19:49.963Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:19:49.963Z"
+    }
+  ],
+  [
+    "f38171ce-27cc-48b0-8fa5-48d910530504",
+    {
+      "kycId": "f38171ce-27cc-48b0-8fa5-48d910530504",
+      "customerId": "cust-020",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Bob"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:19:49.980Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:19:49.980Z"
+    }
+  ],
+  [
+    "542bdc2a-90d3-4c45-aadf-4939b8146b71",
+    {
+      "kycId": "542bdc2a-90d3-4c45-aadf-4939b8146b71",
+      "customerId": "cust-021",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Carol"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:19:49.982Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:19:49.982Z"
+    }
+  ],
+  [
+    "e937401a-50d0-4e81-8b2e-f7b9b0a21823",
+    {
+      "kycId": "e937401a-50d0-4e81-8b2e-f7b9b0a21823",
+      "customerId": "cust-030",
+      "role": "CUSTOMER",
+      "status": "VERIFIED",
+      "data": {
+        "firstName": "Dave",
+        "lastName": "Smith"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "COMPLETED"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:19:50.010Z",
+      "verifiedAt": "2026-03-21T09:19:50.032Z",
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:19:50.032Z"
+    }
+  ],
+  [
+    "8b4a60a2-90e6-4305-aba3-eef88bdd6f07",
+    {
+      "kycId": "8b4a60a2-90e6-4305-aba3-eef88bdd6f07",
+      "customerId": "cust-031",
+      "role": "CUSTOMER",
+      "status": "REJECTED",
+      "data": {
+        "firstName": "Eve"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:19:50.180Z",
+      "verifiedAt": null,
+      "rejectionReason": "Incomplete documents",
+      "updatedAt": "2026-03-21T09:19:50.182Z"
+    }
+  ],
+  [
+    "2683fd64-e7f5-4d6e-b608-2286c6933857",
+    {
+      "kycId": "2683fd64-e7f5-4d6e-b608-2286c6933857",
+      "customerId": "cust-001",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:20:26.788Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:20:26.790Z"
+    }
+  ],
+  [
+    "b6c255b2-b00b-4341-b8ac-598127bcb65f",
+    {
+      "kycId": "b6c255b2-b00b-4341-b8ac-598127bcb65f",
+      "customerId": "cust-002",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Jane"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:20:26.795Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:20:26.795Z"
+    }
+  ],
+  [
+    "967e5836-abc2-4a89-98ec-d23f1d74987e",
+    {
+      "kycId": "967e5836-abc2-4a89-98ec-d23f1d74987e",
+      "customerId": "fm-001",
+      "role": "FUND_MANAGER",
+      "status": "PENDING",
+      "data": {
+        "orgName": "FundCo"
+      },
+      "steps": [
+        {
+          "name": "Organization Verification",
+          "fields": [
+            "orgName",
+            "registrationNumber",
+            "cin"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Regulatory Compliance",
+          "fields": [
+            "sebiRegistration",
+            "amfiCode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Authorized Signatory",
+          "fields": [
+            "signatoryName",
+            "designation",
+            "authorityLetter"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "orgDocuments"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:20:26.820Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:20:26.820Z"
+    }
+  ],
+  [
+    "905c1c5f-1ed1-434d-851b-c2aa0371332b",
+    {
+      "kycId": "905c1c5f-1ed1-434d-851b-c2aa0371332b",
+      "customerId": "cust-010",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Alice"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:20:26.859Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:20:26.859Z"
+    }
+  ],
+  [
+    "dcacb0d4-f915-4d5d-919a-0a2d08b1f848",
+    {
+      "kycId": "dcacb0d4-f915-4d5d-919a-0a2d08b1f848",
+      "customerId": "cust-020",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Bob"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:20:26.893Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:20:26.893Z"
+    }
+  ],
+  [
+    "a8242be3-bb93-40ae-99fb-613d1352a27d",
+    {
+      "kycId": "a8242be3-bb93-40ae-99fb-613d1352a27d",
+      "customerId": "cust-020",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Bob"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:20:26.918Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:20:26.918Z"
+    }
+  ],
+  [
+    "f8baa89c-a585-4e5e-887b-76609ad6ed95",
+    {
+      "kycId": "f8baa89c-a585-4e5e-887b-76609ad6ed95",
+      "customerId": "cust-021",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Carol"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:20:26.949Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:20:26.949Z"
+    }
+  ],
+  [
+    "d47d7e35-3766-421d-ad9c-712576dc1b5f",
+    {
+      "kycId": "d47d7e35-3766-421d-ad9c-712576dc1b5f",
+      "customerId": "cust-030",
+      "role": "CUSTOMER",
+      "status": "VERIFIED",
+      "data": {
+        "firstName": "Dave",
+        "lastName": "Smith"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "COMPLETED"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:20:27.020Z",
+      "verifiedAt": "2026-03-21T09:20:27.026Z",
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:20:27.026Z"
+    }
+  ],
+  [
+    "2ae14689-c7cc-47dc-b0b4-47ba6dfe26ef",
+    {
+      "kycId": "2ae14689-c7cc-47dc-b0b4-47ba6dfe26ef",
+      "customerId": "cust-031",
+      "role": "CUSTOMER",
+      "status": "REJECTED",
+      "data": {
+        "firstName": "Eve"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:20:27.222Z",
+      "verifiedAt": null,
+      "rejectionReason": "Incomplete documents",
+      "updatedAt": "2026-03-21T09:20:27.226Z"
+    }
+  ],
+  [
+    "8650c038-fc23-45b4-aef2-2cce7ad820af",
+    {
+      "kycId": "8650c038-fc23-45b4-aef2-2cce7ad820af",
+      "customerId": "cust-001",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:24:31.066Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:24:31.070Z"
+    }
+  ],
+  [
+    "fa19d3e2-52f2-4562-96c5-ca19aeb2de2f",
+    {
+      "kycId": "fa19d3e2-52f2-4562-96c5-ca19aeb2de2f",
+      "customerId": "cust-002",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Jane"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:24:31.077Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:24:31.077Z"
+    }
+  ],
+  [
+    "7e737c38-e24d-4c55-81fd-78c5a333f67c",
+    {
+      "kycId": "7e737c38-e24d-4c55-81fd-78c5a333f67c",
+      "customerId": "fm-001",
+      "role": "FUND_MANAGER",
+      "status": "PENDING",
+      "data": {
+        "orgName": "FundCo"
+      },
+      "steps": [
+        {
+          "name": "Organization Verification",
+          "fields": [
+            "orgName",
+            "registrationNumber",
+            "cin"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Regulatory Compliance",
+          "fields": [
+            "sebiRegistration",
+            "amfiCode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Authorized Signatory",
+          "fields": [
+            "signatoryName",
+            "designation",
+            "authorityLetter"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "orgDocuments"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:24:31.084Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:24:31.084Z"
+    }
+  ],
+  [
+    "3b2d5fa4-2cc6-40c3-aba2-0c4d09181c76",
+    {
+      "kycId": "3b2d5fa4-2cc6-40c3-aba2-0c4d09181c76",
+      "customerId": "cust-010",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Alice"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:24:31.090Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:24:31.090Z"
+    }
+  ],
+  [
+    "5f427fa4-1050-43d4-9da4-47325c285b23",
+    {
+      "kycId": "5f427fa4-1050-43d4-9da4-47325c285b23",
+      "customerId": "cust-getbyc-1774085071097",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Bob"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:24:31.097Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:24:31.097Z"
+    }
+  ],
+  [
+    "3d6ebdd2-4174-4806-9fe6-e6955d776514",
+    {
+      "kycId": "3d6ebdd2-4174-4806-9fe6-e6955d776514",
+      "customerId": "cust-getbyc-1774085071097",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Bob"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:24:31.118Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:24:31.118Z"
+    }
+  ],
+  [
+    "2f5a01df-6b8e-470e-8340-4f515fd9bfc7",
+    {
+      "kycId": "2f5a01df-6b8e-470e-8340-4f515fd9bfc7",
+      "customerId": "cust-030",
+      "role": "CUSTOMER",
+      "status": "VERIFIED",
+      "data": {
+        "firstName": "Dave",
+        "lastName": "Smith"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "COMPLETED"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:24:31.140Z",
+      "verifiedAt": "2026-03-21T09:24:31.157Z",
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:24:31.157Z"
+    }
+  ],
+  [
+    "73ff895f-106e-4790-9c0a-4d2d1254166f",
+    {
+      "kycId": "73ff895f-106e-4790-9c0a-4d2d1254166f",
+      "customerId": "cust-031",
+      "role": "CUSTOMER",
+      "status": "REJECTED",
+      "data": {
+        "firstName": "Eve"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:24:31.309Z",
+      "verifiedAt": null,
+      "rejectionReason": "Incomplete documents",
+      "updatedAt": "2026-03-21T09:24:31.312Z"
+    }
+  ],
+  [
+    "8747c303-dabf-43bd-83c2-5547784e0f4e",
+    {
+      "kycId": "8747c303-dabf-43bd-83c2-5547784e0f4e",
+      "customerId": "cust-001",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:29:12.964Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:29:12.966Z"
+    }
+  ],
+  [
+    "b1d065f7-2956-4976-8749-0667080cd8d4",
+    {
+      "kycId": "b1d065f7-2956-4976-8749-0667080cd8d4",
+      "customerId": "cust-002",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Jane"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:29:12.975Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:29:12.975Z"
+    }
+  ],
+  [
+    "dd72f7ae-281e-45e9-9262-ab0df5b2e200",
+    {
+      "kycId": "dd72f7ae-281e-45e9-9262-ab0df5b2e200",
+      "customerId": "fm-001",
+      "role": "FUND_MANAGER",
+      "status": "PENDING",
+      "data": {
+        "orgName": "FundCo"
+      },
+      "steps": [
+        {
+          "name": "Organization Verification",
+          "fields": [
+            "orgName",
+            "registrationNumber",
+            "cin"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Regulatory Compliance",
+          "fields": [
+            "sebiRegistration",
+            "amfiCode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Authorized Signatory",
+          "fields": [
+            "signatoryName",
+            "designation",
+            "authorityLetter"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "orgDocuments"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:29:12.999Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:29:12.999Z"
+    }
+  ],
+  [
+    "4e1b2ae4-08ee-4ae1-8612-a09ffd760873",
+    {
+      "kycId": "4e1b2ae4-08ee-4ae1-8612-a09ffd760873",
+      "customerId": "cust-010",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Alice"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:29:13.022Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:29:13.022Z"
+    }
+  ],
+  [
+    "b8ec74c8-7736-4caa-b316-3db6f889bd9d",
+    {
+      "kycId": "b8ec74c8-7736-4caa-b316-3db6f889bd9d",
+      "customerId": "cust-getbyc-1774085353051",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Bob"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:29:13.051Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:29:13.051Z"
+    }
+  ],
+  [
+    "dfd18233-d940-4880-8754-14f2f6c9f358",
+    {
+      "kycId": "dfd18233-d940-4880-8754-14f2f6c9f358",
+      "customerId": "cust-getbyc-1774085353051",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Bob"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:29:13.072Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:29:13.072Z"
+    }
+  ],
+  [
+    "9d7e232a-00f7-4bca-8dd2-f9bd66a36c4e",
+    {
+      "kycId": "9d7e232a-00f7-4bca-8dd2-f9bd66a36c4e",
+      "customerId": "cust-030",
+      "role": "CUSTOMER",
+      "status": "VERIFIED",
+      "data": {
+        "firstName": "Dave",
+        "lastName": "Smith"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "COMPLETED"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:29:13.078Z",
+      "verifiedAt": "2026-03-21T09:29:13.097Z",
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:29:13.097Z"
+    }
+  ],
+  [
+    "6af747bb-631b-4101-8019-8d199f01f969",
+    {
+      "kycId": "6af747bb-631b-4101-8019-8d199f01f969",
+      "customerId": "cust-031",
+      "role": "CUSTOMER",
+      "status": "REJECTED",
+      "data": {
+        "firstName": "Eve"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:29:13.260Z",
+      "verifiedAt": null,
+      "rejectionReason": "Incomplete documents",
+      "updatedAt": "2026-03-21T09:29:13.262Z"
+    }
+  ],
+  [
+    "ade780ae-5c47-46a1-8da8-ae672f104e31",
+    {
+      "kycId": "ade780ae-5c47-46a1-8da8-ae672f104e31",
+      "customerId": "cust-001",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:30:30.876Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:30:30.878Z"
+    }
+  ],
+  [
+    "83bfdb30-bb4e-43e7-9130-496b2091ffcf",
+    {
+      "kycId": "83bfdb30-bb4e-43e7-9130-496b2091ffcf",
+      "customerId": "cust-002",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Jane"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:30:30.884Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:30:30.884Z"
+    }
+  ],
+  [
+    "fe88abeb-9eeb-42b7-9595-45731a185b63",
+    {
+      "kycId": "fe88abeb-9eeb-42b7-9595-45731a185b63",
+      "customerId": "fm-001",
+      "role": "FUND_MANAGER",
+      "status": "PENDING",
+      "data": {
+        "orgName": "FundCo"
+      },
+      "steps": [
+        {
+          "name": "Organization Verification",
+          "fields": [
+            "orgName",
+            "registrationNumber",
+            "cin"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Regulatory Compliance",
+          "fields": [
+            "sebiRegistration",
+            "amfiCode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Authorized Signatory",
+          "fields": [
+            "signatoryName",
+            "designation",
+            "authorityLetter"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "orgDocuments"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:30:30.913Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:30:30.913Z"
+    }
+  ],
+  [
+    "757abde4-affe-47ad-b2f0-81127d500bad",
+    {
+      "kycId": "757abde4-affe-47ad-b2f0-81127d500bad",
+      "customerId": "cust-010",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Alice"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:30:30.933Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:30:30.933Z"
+    }
+  ],
+  [
+    "6c2db246-e444-48e4-b258-824057adb296",
+    {
+      "kycId": "6c2db246-e444-48e4-b258-824057adb296",
+      "customerId": "cust-getbyc-1774085430956",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Bob"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:30:30.956Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:30:30.956Z"
+    }
+  ],
+  [
+    "459e5dd2-21c2-44a9-aa7f-dec6c4792605",
+    {
+      "kycId": "459e5dd2-21c2-44a9-aa7f-dec6c4792605",
+      "customerId": "cust-getbyc-1774085430956",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Bob"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:30:30.977Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:30:30.977Z"
+    }
+  ],
+  [
+    "ec4cb38a-3576-44ec-aa43-0c4841b4ab07",
+    {
+      "kycId": "ec4cb38a-3576-44ec-aa43-0c4841b4ab07",
+      "customerId": "cust-030",
+      "role": "CUSTOMER",
+      "status": "VERIFIED",
+      "data": {
+        "firstName": "Dave",
+        "lastName": "Smith"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "COMPLETED"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:30:30.983Z",
+      "verifiedAt": "2026-03-21T09:30:31.002Z",
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:30:31.003Z"
+    }
+  ],
+  [
+    "f567bccb-4443-40a7-83c2-faf00e94053e",
+    {
+      "kycId": "f567bccb-4443-40a7-83c2-faf00e94053e",
+      "customerId": "cust-031",
+      "role": "CUSTOMER",
+      "status": "REJECTED",
+      "data": {
+        "firstName": "Eve"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:30:31.137Z",
+      "verifiedAt": null,
+      "rejectionReason": "Incomplete documents",
+      "updatedAt": "2026-03-21T09:30:31.140Z"
+    }
+  ],
+  [
+    "1cff32b7-c761-41b3-8245-6bc3ecb8202c",
+    {
+      "kycId": "1cff32b7-c761-41b3-8245-6bc3ecb8202c",
+      "customerId": "cust-001",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:32:18.787Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:32:18.789Z"
+    }
+  ],
+  [
+    "ca30d278-ded5-4261-981d-ed144b9b58cd",
+    {
+      "kycId": "ca30d278-ded5-4261-981d-ed144b9b58cd",
+      "customerId": "cust-002",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Jane"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:32:18.794Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:32:18.794Z"
+    }
+  ],
+  [
+    "7eda8036-1b5a-4f55-8517-c73a93413d14",
+    {
+      "kycId": "7eda8036-1b5a-4f55-8517-c73a93413d14",
+      "customerId": "fm-001",
+      "role": "FUND_MANAGER",
+      "status": "PENDING",
+      "data": {
+        "orgName": "FundCo"
+      },
+      "steps": [
+        {
+          "name": "Organization Verification",
+          "fields": [
+            "orgName",
+            "registrationNumber",
+            "cin"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Regulatory Compliance",
+          "fields": [
+            "sebiRegistration",
+            "amfiCode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Authorized Signatory",
+          "fields": [
+            "signatoryName",
+            "designation",
+            "authorityLetter"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "orgDocuments"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:32:18.814Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:32:18.814Z"
+    }
+  ],
+  [
+    "46c1e8ef-bff5-4085-abea-2bdce4708b6c",
+    {
+      "kycId": "46c1e8ef-bff5-4085-abea-2bdce4708b6c",
+      "customerId": "cust-010",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Alice"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:32:18.832Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:32:18.832Z"
+    }
+  ],
+  [
+    "f7926e69-5b55-4872-b455-be802f017f1b",
+    {
+      "kycId": "f7926e69-5b55-4872-b455-be802f017f1b",
+      "customerId": "cust-getbyc-1774085538851",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Bob"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:32:18.851Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:32:18.851Z"
+    }
+  ],
+  [
+    "aba944ac-3699-4a7a-b588-6550aefb786c",
+    {
+      "kycId": "aba944ac-3699-4a7a-b588-6550aefb786c",
+      "customerId": "cust-getbyc-1774085538851",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Bob"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:32:18.868Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:32:18.868Z"
+    }
+  ],
+  [
+    "fff226ab-89f1-4fa7-a759-35c5dbf21e20",
+    {
+      "kycId": "fff226ab-89f1-4fa7-a759-35c5dbf21e20",
+      "customerId": "cust-030",
+      "role": "CUSTOMER",
+      "status": "VERIFIED",
+      "data": {
+        "firstName": "Dave",
+        "lastName": "Smith"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "COMPLETED"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:32:18.872Z",
+      "verifiedAt": "2026-03-21T09:32:18.891Z",
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:32:18.891Z"
+    }
+  ],
+  [
+    "43da0ccb-db7c-4dc9-a95d-b09f0522df8c",
+    {
+      "kycId": "43da0ccb-db7c-4dc9-a95d-b09f0522df8c",
+      "customerId": "cust-031",
+      "role": "CUSTOMER",
+      "status": "REJECTED",
+      "data": {
+        "firstName": "Eve"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:32:18.991Z",
+      "verifiedAt": null,
+      "rejectionReason": "Incomplete documents",
+      "updatedAt": "2026-03-21T09:32:18.993Z"
+    }
+  ],
+  [
+    "6f4a922c-3392-4a26-8285-4e514667ebdf",
+    {
+      "kycId": "6f4a922c-3392-4a26-8285-4e514667ebdf",
+      "customerId": "cust-001",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:33:35.028Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:33:35.030Z"
+    }
+  ],
+  [
+    "eb163feb-6b9e-45c9-b6c9-71c7df290cd8",
+    {
+      "kycId": "eb163feb-6b9e-45c9-b6c9-71c7df290cd8",
+      "customerId": "cust-002",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Jane"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:33:35.034Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:33:35.034Z"
+    }
+  ],
+  [
+    "bd48ff3f-b411-4617-a944-c41b9e4fe125",
+    {
+      "kycId": "bd48ff3f-b411-4617-a944-c41b9e4fe125",
+      "customerId": "fm-001",
+      "role": "FUND_MANAGER",
+      "status": "PENDING",
+      "data": {
+        "orgName": "FundCo"
+      },
+      "steps": [
+        {
+          "name": "Organization Verification",
+          "fields": [
+            "orgName",
+            "registrationNumber",
+            "cin"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Regulatory Compliance",
+          "fields": [
+            "sebiRegistration",
+            "amfiCode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Authorized Signatory",
+          "fields": [
+            "signatoryName",
+            "designation",
+            "authorityLetter"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "orgDocuments"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:33:35.057Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:33:35.057Z"
+    }
+  ],
+  [
+    "e3c862d3-fc20-4930-ab48-87994604c19d",
+    {
+      "kycId": "e3c862d3-fc20-4930-ab48-87994604c19d",
+      "customerId": "cust-010",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Alice"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:33:35.080Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:33:35.080Z"
+    }
+  ],
+  [
+    "d428d2b2-e645-41a3-84ec-8658d6daab23",
+    {
+      "kycId": "d428d2b2-e645-41a3-84ec-8658d6daab23",
+      "customerId": "cust-getbyc-1774085615087",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Bob"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:33:35.087Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:33:35.087Z"
+    }
+  ],
+  [
+    "80b36583-683f-465f-aced-90ec283a6276",
+    {
+      "kycId": "80b36583-683f-465f-aced-90ec283a6276",
+      "customerId": "cust-getbyc-1774085615087",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Bob"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:33:35.114Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:33:35.114Z"
+    }
+  ],
+  [
+    "efb47e41-6702-453f-a48e-b1700830b046",
+    {
+      "kycId": "efb47e41-6702-453f-a48e-b1700830b046",
+      "customerId": "cust-030",
+      "role": "CUSTOMER",
+      "status": "VERIFIED",
+      "data": {
+        "firstName": "Dave",
+        "lastName": "Smith"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "COMPLETED"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:33:35.138Z",
+      "verifiedAt": "2026-03-21T09:33:35.159Z",
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:33:35.159Z"
+    }
+  ],
+  [
+    "4575cbfe-20be-40bb-8e8c-05b9a10c173f",
+    {
+      "kycId": "4575cbfe-20be-40bb-8e8c-05b9a10c173f",
+      "customerId": "cust-031",
+      "role": "CUSTOMER",
+      "status": "REJECTED",
+      "data": {
+        "firstName": "Eve"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:33:35.311Z",
+      "verifiedAt": null,
+      "rejectionReason": "Incomplete documents",
+      "updatedAt": "2026-03-21T09:33:35.313Z"
+    }
+  ],
+  [
+    "6f725d24-a437-46f8-bec9-ce1e3b2b495b",
+    {
+      "kycId": "6f725d24-a437-46f8-bec9-ce1e3b2b495b",
+      "customerId": "cust-001",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:38:03.687Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:38:03.688Z"
+    }
+  ],
+  [
+    "94744787-ac5d-4292-b60b-94f7fc8b0854",
+    {
+      "kycId": "94744787-ac5d-4292-b60b-94f7fc8b0854",
+      "customerId": "cust-002",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Jane"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:38:03.694Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:38:03.694Z"
+    }
+  ],
+  [
+    "e8867de7-a9fa-4811-96e7-e082a52161df",
+    {
+      "kycId": "e8867de7-a9fa-4811-96e7-e082a52161df",
+      "customerId": "fm-001",
+      "role": "FUND_MANAGER",
+      "status": "PENDING",
+      "data": {
+        "orgName": "FundCo"
+      },
+      "steps": [
+        {
+          "name": "Organization Verification",
+          "fields": [
+            "orgName",
+            "registrationNumber",
+            "cin"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Regulatory Compliance",
+          "fields": [
+            "sebiRegistration",
+            "amfiCode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Authorized Signatory",
+          "fields": [
+            "signatoryName",
+            "designation",
+            "authorityLetter"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "orgDocuments"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:38:03.728Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:38:03.728Z"
+    }
+  ],
+  [
+    "511122e5-ab71-4975-b379-348cb84c5c32",
+    {
+      "kycId": "511122e5-ab71-4975-b379-348cb84c5c32",
+      "customerId": "cust-010",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Alice"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:38:03.754Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:38:03.754Z"
+    }
+  ],
+  [
+    "89d865c8-b64a-4d8e-bd59-58b7687faff6",
+    {
+      "kycId": "89d865c8-b64a-4d8e-bd59-58b7687faff6",
+      "customerId": "cust-getbyc-1774085883776",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Bob"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:38:03.776Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:38:03.777Z"
+    }
+  ],
+  [
+    "f19aabb2-9fbe-4575-942c-8b541e656fce",
+    {
+      "kycId": "f19aabb2-9fbe-4575-942c-8b541e656fce",
+      "customerId": "cust-getbyc-1774085883776",
+      "role": "CUSTOMER",
+      "status": "PENDING",
+      "data": {
+        "firstName": "Bob"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:38:03.794Z",
+      "verifiedAt": null,
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:38:03.794Z"
+    }
+  ],
+  [
+    "13f1e4b0-f735-40f7-9b40-d9bc860db46e",
+    {
+      "kycId": "13f1e4b0-f735-40f7-9b40-d9bc860db46e",
+      "customerId": "cust-030",
+      "role": "CUSTOMER",
+      "status": "VERIFIED",
+      "data": {
+        "firstName": "Dave",
+        "lastName": "Smith"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "COMPLETED"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "COMPLETED"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:38:03.823Z",
+      "verifiedAt": "2026-03-21T09:38:03.848Z",
+      "rejectionReason": null,
+      "updatedAt": "2026-03-21T09:38:03.848Z"
+    }
+  ],
+  [
+    "3051241a-b51b-46c0-8eb2-02ffe15c616c",
+    {
+      "kycId": "3051241a-b51b-46c0-8eb2-02ffe15c616c",
+      "customerId": "cust-031",
+      "role": "CUSTOMER",
+      "status": "REJECTED",
+      "data": {
+        "firstName": "Eve"
+      },
+      "steps": [
+        {
+          "name": "Identity Verification",
+          "fields": [
+            "panNumber",
+            "aadhaarNumber"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Address Proof",
+          "fields": [
+            "addressLine1",
+            "city",
+            "pincode"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "Financial Details",
+          "fields": [
+            "annualIncome",
+            "occupation",
+            "sourceOfFunds"
+          ],
+          "status": "PENDING"
+        },
+        {
+          "name": "eKYC",
+          "fields": [
+            "selfieUrl",
+            "videoVerification"
+          ],
+          "status": "PENDING"
+        }
+      ],
+      "submittedAt": "2026-03-21T09:38:04.037Z",
+      "verifiedAt": null,
+      "rejectionReason": "Incomplete documents",
+      "updatedAt": "2026-03-21T09:38:04.040Z"
+    }
+  ]
+]

@@ -1,0 +1,3392 @@
+[
+  [
+    "0fefdba8-b6cc-46d9-9edd-4d02a93be242",
+    {
+      "screeningId": "0fefdba8-b6cc-46d9-9edd-4d02a93be242",
+      "customerId": "cust-100",
+      "personalData": {
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:02:29.026Z",
+      "updatedAt": "2026-03-21T09:02:29.026Z"
+    }
+  ],
+  [
+    "57da0fe2-dff2-4e18-ac49-37367044d742",
+    {
+      "screeningId": "57da0fe2-dff2-4e18-ac49-37367044d742",
+      "customerId": "cust-101",
+      "personalData": {
+        "firstName": "SANCTION",
+        "lastName": "Person"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:02:29.150Z",
+      "updatedAt": "2026-03-21T09:02:29.150Z"
+    }
+  ],
+  [
+    "fd486d1f-9aee-4507-b0ba-2a074d98649b",
+    {
+      "screeningId": "fd486d1f-9aee-4507-b0ba-2a074d98649b",
+      "customerId": "cust-102",
+      "personalData": {
+        "firstName": "PEP",
+        "lastName": "Official"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:02:29.275Z",
+      "updatedAt": "2026-03-21T09:02:29.275Z"
+    }
+  ],
+  [
+    "67cf0f4b-4bb2-4d15-86ce-2c04eca6e71a",
+    {
+      "screeningId": "67cf0f4b-4bb2-4d15-86ce-2c04eca6e71a",
+      "customerId": "cust-103",
+      "personalData": {
+        "firstName": "Normal",
+        "lastName": "User"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:02:29.385Z",
+      "updatedAt": "2026-03-21T09:02:29.385Z"
+    }
+  ],
+  [
+    "cb1bf831-b25f-4dd6-b777-7e03c85d5ce2",
+    {
+      "screeningId": "cb1bf831-b25f-4dd6-b777-7e03c85d5ce2",
+      "customerId": "cust-104",
+      "personalData": {
+        "firstName": "SANCTION",
+        "lastName": "Target"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:02:29.495Z",
+      "updatedAt": "2026-03-21T09:02:29.495Z"
+    }
+  ],
+  [
+    "ce8cbfbd-526c-42ec-b130-4f2166df6f41",
+    {
+      "screeningId": "ce8cbfbd-526c-42ec-b130-4f2166df6f41",
+      "customerId": "cust-105",
+      "personalData": {
+        "firstName": "Clean",
+        "lastName": "Name"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:02:29.606Z",
+      "updatedAt": "2026-03-21T09:02:29.606Z"
+    }
+  ],
+  [
+    "73749b4d-35c2-460d-b7d0-b8376ea7faaa",
+    {
+      "screeningId": "73749b4d-35c2-460d-b7d0-b8376ea7faaa",
+      "customerId": "cust-106",
+      "personalData": {
+        "firstName": "SANCTION",
+        "lastName": "Match"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:02:29.712Z",
+      "updatedAt": "2026-03-21T09:02:29.712Z"
+    }
+  ],
+  [
+    "4cb8118a-a7b4-4259-9f58-e9fb02fe46cf",
+    {
+      "screeningId": "4cb8118a-a7b4-4259-9f58-e9fb02fe46cf",
+      "customerId": "cust-110",
+      "personalData": {
+        "firstName": "Alice",
+        "lastName": "Wonder"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:02:29.825Z",
+      "updatedAt": "2026-03-21T09:02:29.825Z"
+    }
+  ],
+  [
+    "3131a465-a00a-4a55-b442-8b2ccf0f4fb5",
+    {
+      "screeningId": "3131a465-a00a-4a55-b442-8b2ccf0f4fb5",
+      "customerId": "cust-120",
+      "personalData": {
+        "firstName": "Bob",
+        "lastName": "One"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:02:29.935Z",
+      "updatedAt": "2026-03-21T09:02:29.935Z"
+    }
+  ],
+  [
+    "ce1ed310-9125-4bf0-a8d6-08e732897c3f",
+    {
+      "screeningId": "ce1ed310-9125-4bf0-a8d6-08e732897c3f",
+      "customerId": "cust-120",
+      "personalData": {
+        "firstName": "Bob",
+        "lastName": "Two"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:02:30.044Z",
+      "updatedAt": "2026-03-21T09:02:30.044Z"
+    }
+  ],
+  [
+    "77e0d710-a381-4c9a-82e4-f3f3f9b2fcfe",
+    {
+      "screeningId": "77e0d710-a381-4c9a-82e4-f3f3f9b2fcfe",
+      "customerId": "cust-121",
+      "personalData": {
+        "firstName": "Carol",
+        "lastName": "Other"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:02:30.153Z",
+      "updatedAt": "2026-03-21T09:02:30.153Z"
+    }
+  ],
+  [
+    "29f49097-e016-4b6c-a872-91e7c7c7ac00",
+    {
+      "screeningId": "29f49097-e016-4b6c-a872-91e7c7c7ac00",
+      "customerId": "cust-100",
+      "personalData": {
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:04:26.186Z",
+      "updatedAt": "2026-03-21T09:04:26.186Z"
+    }
+  ],
+  [
+    "1fa2ad9b-554a-4cdf-94cc-b9d9a5ea6fa9",
+    {
+      "screeningId": "1fa2ad9b-554a-4cdf-94cc-b9d9a5ea6fa9",
+      "customerId": "cust-101",
+      "personalData": {
+        "firstName": "SANCTION",
+        "lastName": "Person"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:04:26.295Z",
+      "updatedAt": "2026-03-21T09:04:26.295Z"
+    }
+  ],
+  [
+    "a5caebfd-3099-4a86-a9be-3f498a3cd8e4",
+    {
+      "screeningId": "a5caebfd-3099-4a86-a9be-3f498a3cd8e4",
+      "customerId": "cust-102",
+      "personalData": {
+        "firstName": "PEP",
+        "lastName": "Official"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:04:26.413Z",
+      "updatedAt": "2026-03-21T09:04:26.413Z"
+    }
+  ],
+  [
+    "f20298d5-a166-4233-a325-ed2f1820469b",
+    {
+      "screeningId": "f20298d5-a166-4233-a325-ed2f1820469b",
+      "customerId": "cust-103",
+      "personalData": {
+        "firstName": "Normal",
+        "lastName": "User"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:04:26.531Z",
+      "updatedAt": "2026-03-21T09:04:26.531Z"
+    }
+  ],
+  [
+    "6df9e288-6681-4cbc-9af7-19e020caf176",
+    {
+      "screeningId": "6df9e288-6681-4cbc-9af7-19e020caf176",
+      "customerId": "cust-104",
+      "personalData": {
+        "firstName": "SANCTION",
+        "lastName": "Target"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:04:26.641Z",
+      "updatedAt": "2026-03-21T09:04:26.641Z"
+    }
+  ],
+  [
+    "3e142374-50c8-455f-b696-cfd20d53bc61",
+    {
+      "screeningId": "3e142374-50c8-455f-b696-cfd20d53bc61",
+      "customerId": "cust-105",
+      "personalData": {
+        "firstName": "Clean",
+        "lastName": "Name"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:04:26.750Z",
+      "updatedAt": "2026-03-21T09:04:26.750Z"
+    }
+  ],
+  [
+    "1cdc02b5-c98c-4175-8a3a-18bb833ce947",
+    {
+      "screeningId": "1cdc02b5-c98c-4175-8a3a-18bb833ce947",
+      "customerId": "cust-106",
+      "personalData": {
+        "firstName": "SANCTION",
+        "lastName": "Match"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:04:26.858Z",
+      "updatedAt": "2026-03-21T09:04:26.858Z"
+    }
+  ],
+  [
+    "f57ea2a0-31dc-48c9-9e74-758cd2e43b37",
+    {
+      "screeningId": "f57ea2a0-31dc-48c9-9e74-758cd2e43b37",
+      "customerId": "cust-110",
+      "personalData": {
+        "firstName": "Alice",
+        "lastName": "Wonder"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:04:26.966Z",
+      "updatedAt": "2026-03-21T09:04:26.966Z"
+    }
+  ],
+  [
+    "f169f253-95b7-4645-a9a8-45cf2165c6cd",
+    {
+      "screeningId": "f169f253-95b7-4645-a9a8-45cf2165c6cd",
+      "customerId": "cust-120",
+      "personalData": {
+        "firstName": "Bob",
+        "lastName": "One"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:04:27.076Z",
+      "updatedAt": "2026-03-21T09:04:27.076Z"
+    }
+  ],
+  [
+    "8f06785d-2e58-4c0b-973e-0a3055bc8155",
+    {
+      "screeningId": "8f06785d-2e58-4c0b-973e-0a3055bc8155",
+      "customerId": "cust-120",
+      "personalData": {
+        "firstName": "Bob",
+        "lastName": "Two"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:04:27.184Z",
+      "updatedAt": "2026-03-21T09:04:27.184Z"
+    }
+  ],
+  [
+    "5061487c-7dfd-47c2-bc0e-4a23fa7506b0",
+    {
+      "screeningId": "5061487c-7dfd-47c2-bc0e-4a23fa7506b0",
+      "customerId": "cust-121",
+      "personalData": {
+        "firstName": "Carol",
+        "lastName": "Other"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:04:27.294Z",
+      "updatedAt": "2026-03-21T09:04:27.294Z"
+    }
+  ],
+  [
+    "eca29d46-7985-4f4c-840b-9531e7ea2246",
+    {
+      "screeningId": "eca29d46-7985-4f4c-840b-9531e7ea2246",
+      "customerId": "cust-100",
+      "personalData": {
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:07:58.153Z",
+      "updatedAt": "2026-03-21T09:07:58.153Z"
+    }
+  ],
+  [
+    "48c9b127-0d75-496b-ae60-8fbc6a9f0941",
+    {
+      "screeningId": "48c9b127-0d75-496b-ae60-8fbc6a9f0941",
+      "customerId": "cust-101",
+      "personalData": {
+        "firstName": "SANCTION",
+        "lastName": "Person"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:07:58.274Z",
+      "updatedAt": "2026-03-21T09:07:58.274Z"
+    }
+  ],
+  [
+    "c92b968b-2b6d-45b0-92cb-8a19306f9fd1",
+    {
+      "screeningId": "c92b968b-2b6d-45b0-92cb-8a19306f9fd1",
+      "customerId": "cust-102",
+      "personalData": {
+        "firstName": "PEP",
+        "lastName": "Official"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:07:58.398Z",
+      "updatedAt": "2026-03-21T09:07:58.399Z"
+    }
+  ],
+  [
+    "ee602f8a-840d-43fa-97ad-4f5499437a98",
+    {
+      "screeningId": "ee602f8a-840d-43fa-97ad-4f5499437a98",
+      "customerId": "cust-103",
+      "personalData": {
+        "firstName": "Normal",
+        "lastName": "User"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:07:58.520Z",
+      "updatedAt": "2026-03-21T09:07:58.520Z"
+    }
+  ],
+  [
+    "76023d62-0cec-4cb3-8683-a1609e5a764c",
+    {
+      "screeningId": "76023d62-0cec-4cb3-8683-a1609e5a764c",
+      "customerId": "cust-104",
+      "personalData": {
+        "firstName": "SANCTION",
+        "lastName": "Target"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:07:58.630Z",
+      "updatedAt": "2026-03-21T09:07:58.630Z"
+    }
+  ],
+  [
+    "dade65c3-c0a8-45cd-b60a-91bdf99f0f2b",
+    {
+      "screeningId": "dade65c3-c0a8-45cd-b60a-91bdf99f0f2b",
+      "customerId": "cust-105",
+      "personalData": {
+        "firstName": "Clean",
+        "lastName": "Name"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:07:58.740Z",
+      "updatedAt": "2026-03-21T09:07:58.740Z"
+    }
+  ],
+  [
+    "24eb794b-2f12-4685-a1d4-0320bd7fe635",
+    {
+      "screeningId": "24eb794b-2f12-4685-a1d4-0320bd7fe635",
+      "customerId": "cust-106",
+      "personalData": {
+        "firstName": "SANCTION",
+        "lastName": "Match"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:07:58.848Z",
+      "updatedAt": "2026-03-21T09:07:58.848Z"
+    }
+  ],
+  [
+    "0cc39306-bbee-44ed-9c10-3afbeb11ef0a",
+    {
+      "screeningId": "0cc39306-bbee-44ed-9c10-3afbeb11ef0a",
+      "customerId": "cust-110",
+      "personalData": {
+        "firstName": "Alice",
+        "lastName": "Wonder"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:07:58.957Z",
+      "updatedAt": "2026-03-21T09:07:58.957Z"
+    }
+  ],
+  [
+    "43495dda-cce8-4407-a026-ee93937c95b1",
+    {
+      "screeningId": "43495dda-cce8-4407-a026-ee93937c95b1",
+      "customerId": "cust-120",
+      "personalData": {
+        "firstName": "Bob",
+        "lastName": "One"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:07:59.068Z",
+      "updatedAt": "2026-03-21T09:07:59.068Z"
+    }
+  ],
+  [
+    "1372ac94-235c-4aa3-9a5b-df71f796ffea",
+    {
+      "screeningId": "1372ac94-235c-4aa3-9a5b-df71f796ffea",
+      "customerId": "cust-120",
+      "personalData": {
+        "firstName": "Bob",
+        "lastName": "Two"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:07:59.176Z",
+      "updatedAt": "2026-03-21T09:07:59.176Z"
+    }
+  ],
+  [
+    "bc40d82b-19c8-4cb0-8803-600d79667bdd",
+    {
+      "screeningId": "bc40d82b-19c8-4cb0-8803-600d79667bdd",
+      "customerId": "cust-121",
+      "personalData": {
+        "firstName": "Carol",
+        "lastName": "Other"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:07:59.283Z",
+      "updatedAt": "2026-03-21T09:07:59.283Z"
+    }
+  ],
+  [
+    "2c7e9be0-aa1f-4fb6-aedc-c6dbeae3dcd7",
+    {
+      "screeningId": "2c7e9be0-aa1f-4fb6-aedc-c6dbeae3dcd7",
+      "customerId": "cust-100",
+      "personalData": {
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:09:39.880Z",
+      "updatedAt": "2026-03-21T09:09:39.880Z"
+    }
+  ],
+  [
+    "ba4fb98c-c4e1-42d0-8674-f51521f5442a",
+    {
+      "screeningId": "ba4fb98c-c4e1-42d0-8674-f51521f5442a",
+      "customerId": "cust-101",
+      "personalData": {
+        "firstName": "SANCTION",
+        "lastName": "Person"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:09:39.987Z",
+      "updatedAt": "2026-03-21T09:09:39.987Z"
+    }
+  ],
+  [
+    "464e368e-b567-4813-b247-4ca4cc9c8698",
+    {
+      "screeningId": "464e368e-b567-4813-b247-4ca4cc9c8698",
+      "customerId": "cust-102",
+      "personalData": {
+        "firstName": "PEP",
+        "lastName": "Official"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:09:40.095Z",
+      "updatedAt": "2026-03-21T09:09:40.095Z"
+    }
+  ],
+  [
+    "40ced111-21c4-45b0-84be-a2681420787b",
+    {
+      "screeningId": "40ced111-21c4-45b0-84be-a2681420787b",
+      "customerId": "cust-103",
+      "personalData": {
+        "firstName": "Normal",
+        "lastName": "User"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:09:40.204Z",
+      "updatedAt": "2026-03-21T09:09:40.204Z"
+    }
+  ],
+  [
+    "75d708e0-527e-4f8d-b4e7-3396f820a50e",
+    {
+      "screeningId": "75d708e0-527e-4f8d-b4e7-3396f820a50e",
+      "customerId": "cust-104",
+      "personalData": {
+        "firstName": "SANCTION",
+        "lastName": "Target"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:09:40.312Z",
+      "updatedAt": "2026-03-21T09:09:40.312Z"
+    }
+  ],
+  [
+    "25a7cd19-2c90-4cc3-b971-495b4c949099",
+    {
+      "screeningId": "25a7cd19-2c90-4cc3-b971-495b4c949099",
+      "customerId": "cust-105",
+      "personalData": {
+        "firstName": "Clean",
+        "lastName": "Name"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:09:40.422Z",
+      "updatedAt": "2026-03-21T09:09:40.422Z"
+    }
+  ],
+  [
+    "3d0ce8b6-076d-47e8-ab4d-a69f3cf89d8a",
+    {
+      "screeningId": "3d0ce8b6-076d-47e8-ab4d-a69f3cf89d8a",
+      "customerId": "cust-106",
+      "personalData": {
+        "firstName": "SANCTION",
+        "lastName": "Match"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:09:40.530Z",
+      "updatedAt": "2026-03-21T09:09:40.530Z"
+    }
+  ],
+  [
+    "57065bcf-9de9-4354-a8ba-bc5cfeeb1e9c",
+    {
+      "screeningId": "57065bcf-9de9-4354-a8ba-bc5cfeeb1e9c",
+      "customerId": "cust-110",
+      "personalData": {
+        "firstName": "Alice",
+        "lastName": "Wonder"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:09:40.640Z",
+      "updatedAt": "2026-03-21T09:09:40.640Z"
+    }
+  ],
+  [
+    "440aa24a-cce2-4455-b5a3-e308102a59c0",
+    {
+      "screeningId": "440aa24a-cce2-4455-b5a3-e308102a59c0",
+      "customerId": "cust-120",
+      "personalData": {
+        "firstName": "Bob",
+        "lastName": "One"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:09:40.749Z",
+      "updatedAt": "2026-03-21T09:09:40.749Z"
+    }
+  ],
+  [
+    "abe45e1e-f019-4ac5-bbd4-cc0dfe3e0374",
+    {
+      "screeningId": "abe45e1e-f019-4ac5-bbd4-cc0dfe3e0374",
+      "customerId": "cust-120",
+      "personalData": {
+        "firstName": "Bob",
+        "lastName": "Two"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:09:40.857Z",
+      "updatedAt": "2026-03-21T09:09:40.857Z"
+    }
+  ],
+  [
+    "d065ec03-e38c-4631-84d5-8a35bbed9ea8",
+    {
+      "screeningId": "d065ec03-e38c-4631-84d5-8a35bbed9ea8",
+      "customerId": "cust-121",
+      "personalData": {
+        "firstName": "Carol",
+        "lastName": "Other"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:09:40.967Z",
+      "updatedAt": "2026-03-21T09:09:40.968Z"
+    }
+  ],
+  [
+    "ec21869b-f40f-4a03-8834-690810403ab9",
+    {
+      "screeningId": "ec21869b-f40f-4a03-8834-690810403ab9",
+      "customerId": "cust-100",
+      "personalData": {
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:10:55.905Z",
+      "updatedAt": "2026-03-21T09:10:55.905Z"
+    }
+  ],
+  [
+    "ed598087-e77d-41c9-b007-c50bb11274d6",
+    {
+      "screeningId": "ed598087-e77d-41c9-b007-c50bb11274d6",
+      "customerId": "cust-101",
+      "personalData": {
+        "firstName": "SANCTION",
+        "lastName": "Person"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:10:56.033Z",
+      "updatedAt": "2026-03-21T09:10:56.033Z"
+    }
+  ],
+  [
+    "fcabd1ec-0c95-41d3-a325-b2a52988a94a",
+    {
+      "screeningId": "fcabd1ec-0c95-41d3-a325-b2a52988a94a",
+      "customerId": "cust-102",
+      "personalData": {
+        "firstName": "PEP",
+        "lastName": "Official"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:10:56.157Z",
+      "updatedAt": "2026-03-21T09:10:56.157Z"
+    }
+  ],
+  [
+    "b8f07c34-1e11-4ca8-acc3-e80b774b060c",
+    {
+      "screeningId": "b8f07c34-1e11-4ca8-acc3-e80b774b060c",
+      "customerId": "cust-100",
+      "personalData": {
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:24:30.936Z",
+      "updatedAt": "2026-03-21T09:24:30.936Z"
+    }
+  ],
+  [
+    "db01ccd3-c7fb-4ed4-bf12-b6155dbbcdca",
+    {
+      "screeningId": "db01ccd3-c7fb-4ed4-bf12-b6155dbbcdca",
+      "customerId": "cust-101",
+      "personalData": {
+        "firstName": "SANCTION",
+        "lastName": "Person"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:24:31.049Z",
+      "updatedAt": "2026-03-21T09:24:31.049Z"
+    }
+  ],
+  [
+    "528174cd-c221-4382-871d-77e6df92cd1d",
+    {
+      "screeningId": "528174cd-c221-4382-871d-77e6df92cd1d",
+      "customerId": "cust-102",
+      "personalData": {
+        "firstName": "PEP",
+        "lastName": "Official"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:24:31.175Z",
+      "updatedAt": "2026-03-21T09:24:31.175Z"
+    }
+  ],
+  [
+    "1a365e62-3cdc-4291-bcc0-793e6fde338d",
+    {
+      "screeningId": "1a365e62-3cdc-4291-bcc0-793e6fde338d",
+      "customerId": "cust-103",
+      "personalData": {
+        "firstName": "Normal",
+        "lastName": "User"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:24:31.287Z",
+      "updatedAt": "2026-03-21T09:24:31.287Z"
+    }
+  ],
+  [
+    "ead15cb7-6e80-48a3-afd1-b5e6166c2400",
+    {
+      "screeningId": "ead15cb7-6e80-48a3-afd1-b5e6166c2400",
+      "customerId": "cust-104",
+      "personalData": {
+        "firstName": "SANCTION",
+        "lastName": "Target"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:24:31.415Z",
+      "updatedAt": "2026-03-21T09:24:31.415Z"
+    }
+  ],
+  [
+    "d7d42300-0ee6-4527-adb5-6f669fe8f961",
+    {
+      "screeningId": "d7d42300-0ee6-4527-adb5-6f669fe8f961",
+      "customerId": "cust-105",
+      "personalData": {
+        "firstName": "Clean",
+        "lastName": "Name"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:24:31.529Z",
+      "updatedAt": "2026-03-21T09:24:31.530Z"
+    }
+  ],
+  [
+    "0cc4bb10-e6b4-41fc-947c-4c90baad354f",
+    {
+      "screeningId": "0cc4bb10-e6b4-41fc-947c-4c90baad354f",
+      "customerId": "cust-106",
+      "personalData": {
+        "firstName": "SANCTION",
+        "lastName": "Match"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:24:31.641Z",
+      "updatedAt": "2026-03-21T09:24:31.641Z"
+    }
+  ],
+  [
+    "2f6859af-8bef-414e-acfd-b45ff0cddc10",
+    {
+      "screeningId": "2f6859af-8bef-414e-acfd-b45ff0cddc10",
+      "customerId": "cust-110",
+      "personalData": {
+        "firstName": "Alice",
+        "lastName": "Wonder"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:24:31.748Z",
+      "updatedAt": "2026-03-21T09:24:31.748Z"
+    }
+  ],
+  [
+    "fd9e8790-89a7-495b-b066-f59e5831745d",
+    {
+      "screeningId": "fd9e8790-89a7-495b-b066-f59e5831745d",
+      "customerId": "cust-scrn-1774085071753",
+      "personalData": {
+        "firstName": "Bob",
+        "lastName": "One"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:24:31.858Z",
+      "updatedAt": "2026-03-21T09:24:31.858Z"
+    }
+  ],
+  [
+    "fbe0239c-b4b7-46de-9c8e-af2cabfc5173",
+    {
+      "screeningId": "fbe0239c-b4b7-46de-9c8e-af2cabfc5173",
+      "customerId": "cust-scrn-1774085071753",
+      "personalData": {
+        "firstName": "Bob",
+        "lastName": "Two"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:24:31.965Z",
+      "updatedAt": "2026-03-21T09:24:31.965Z"
+    }
+  ],
+  [
+    "9afccaf6-ba5f-4377-a884-395d51d999ee",
+    {
+      "screeningId": "9afccaf6-ba5f-4377-a884-395d51d999ee",
+      "customerId": "cust-scrn-1774085071753-other",
+      "personalData": {
+        "firstName": "Carol",
+        "lastName": "Other"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:24:32.075Z",
+      "updatedAt": "2026-03-21T09:24:32.075Z"
+    }
+  ],
+  [
+    "dd9a4cdc-2134-43da-8928-eace9a21fdde",
+    {
+      "screeningId": "dd9a4cdc-2134-43da-8928-eace9a21fdde",
+      "customerId": "cust-100",
+      "personalData": {
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:29:12.911Z",
+      "updatedAt": "2026-03-21T09:29:12.911Z"
+    }
+  ],
+  [
+    "629cf828-429c-4566-a940-50df688a7226",
+    {
+      "screeningId": "629cf828-429c-4566-a940-50df688a7226",
+      "customerId": "cust-101",
+      "personalData": {
+        "firstName": "SANCTION",
+        "lastName": "Person"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:29:13.018Z",
+      "updatedAt": "2026-03-21T09:29:13.018Z"
+    }
+  ],
+  [
+    "3e793aaf-de30-4f5b-af94-8e25d51105a2",
+    {
+      "screeningId": "3e793aaf-de30-4f5b-af94-8e25d51105a2",
+      "customerId": "cust-102",
+      "personalData": {
+        "firstName": "PEP",
+        "lastName": "Official"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:29:13.136Z",
+      "updatedAt": "2026-03-21T09:29:13.136Z"
+    }
+  ],
+  [
+    "e65b24c8-4171-4129-ae39-a5af36633518",
+    {
+      "screeningId": "e65b24c8-4171-4129-ae39-a5af36633518",
+      "customerId": "cust-103",
+      "personalData": {
+        "firstName": "Normal",
+        "lastName": "User"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:29:13.258Z",
+      "updatedAt": "2026-03-21T09:29:13.258Z"
+    }
+  ],
+  [
+    "c8e04ed0-5bbf-4de8-a975-92af1e9ef22c",
+    {
+      "screeningId": "c8e04ed0-5bbf-4de8-a975-92af1e9ef22c",
+      "customerId": "cust-104",
+      "personalData": {
+        "firstName": "SANCTION",
+        "lastName": "Target"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:29:13.380Z",
+      "updatedAt": "2026-03-21T09:29:13.380Z"
+    }
+  ],
+  [
+    "37f1c2c6-b054-4ca2-a920-1d804cb0a1e7",
+    {
+      "screeningId": "37f1c2c6-b054-4ca2-a920-1d804cb0a1e7",
+      "customerId": "cust-105",
+      "personalData": {
+        "firstName": "Clean",
+        "lastName": "Name"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:29:13.488Z",
+      "updatedAt": "2026-03-21T09:29:13.488Z"
+    }
+  ],
+  [
+    "32fd0124-50a5-472a-a05f-f1d374916650",
+    {
+      "screeningId": "32fd0124-50a5-472a-a05f-f1d374916650",
+      "customerId": "cust-106",
+      "personalData": {
+        "firstName": "SANCTION",
+        "lastName": "Match"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:29:13.597Z",
+      "updatedAt": "2026-03-21T09:29:13.597Z"
+    }
+  ],
+  [
+    "04fc7d72-e809-423b-8a46-6e47efb1b63b",
+    {
+      "screeningId": "04fc7d72-e809-423b-8a46-6e47efb1b63b",
+      "customerId": "cust-110",
+      "personalData": {
+        "firstName": "Alice",
+        "lastName": "Wonder"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:29:13.706Z",
+      "updatedAt": "2026-03-21T09:29:13.706Z"
+    }
+  ],
+  [
+    "d68d0307-cb0b-4c38-8296-d3164cb684b9",
+    {
+      "screeningId": "d68d0307-cb0b-4c38-8296-d3164cb684b9",
+      "customerId": "cust-scrn-1774085353711",
+      "personalData": {
+        "firstName": "Bob",
+        "lastName": "One"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:29:13.815Z",
+      "updatedAt": "2026-03-21T09:29:13.815Z"
+    }
+  ],
+  [
+    "6be557af-f385-475c-8376-358391cd18bb",
+    {
+      "screeningId": "6be557af-f385-475c-8376-358391cd18bb",
+      "customerId": "cust-scrn-1774085353711",
+      "personalData": {
+        "firstName": "Bob",
+        "lastName": "Two"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:29:13.925Z",
+      "updatedAt": "2026-03-21T09:29:13.925Z"
+    }
+  ],
+  [
+    "edc1f4fa-ae85-41d7-a6d6-ae1de1634988",
+    {
+      "screeningId": "edc1f4fa-ae85-41d7-a6d6-ae1de1634988",
+      "customerId": "cust-scrn-1774085353711-other",
+      "personalData": {
+        "firstName": "Carol",
+        "lastName": "Other"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:29:14.036Z",
+      "updatedAt": "2026-03-21T09:29:14.036Z"
+    }
+  ],
+  [
+    "83b4fad2-21e2-4980-8749-7b875b737a43",
+    {
+      "screeningId": "83b4fad2-21e2-4980-8749-7b875b737a43",
+      "customerId": "cust-100",
+      "personalData": {
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:30:30.835Z",
+      "updatedAt": "2026-03-21T09:30:30.835Z"
+    }
+  ],
+  [
+    "5bdbaca2-bf20-4444-8f47-93ea1c8757bc",
+    {
+      "screeningId": "5bdbaca2-bf20-4444-8f47-93ea1c8757bc",
+      "customerId": "cust-101",
+      "personalData": {
+        "firstName": "SANCTION",
+        "lastName": "Person"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:30:30.943Z",
+      "updatedAt": "2026-03-21T09:30:30.943Z"
+    }
+  ],
+  [
+    "9df49d3c-4fa6-4c05-8cf5-49d6e900c15d",
+    {
+      "screeningId": "9df49d3c-4fa6-4c05-8cf5-49d6e900c15d",
+      "customerId": "cust-102",
+      "personalData": {
+        "firstName": "PEP",
+        "lastName": "Official"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:30:31.054Z",
+      "updatedAt": "2026-03-21T09:30:31.054Z"
+    }
+  ],
+  [
+    "f2b991e3-3839-4a47-8664-d1eb6b3ff947",
+    {
+      "screeningId": "f2b991e3-3839-4a47-8664-d1eb6b3ff947",
+      "customerId": "cust-103",
+      "personalData": {
+        "firstName": "Normal",
+        "lastName": "User"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:30:31.169Z",
+      "updatedAt": "2026-03-21T09:30:31.169Z"
+    }
+  ],
+  [
+    "a9425ad6-29d6-40bd-b9e1-b1ae1d1fd18d",
+    {
+      "screeningId": "a9425ad6-29d6-40bd-b9e1-b1ae1d1fd18d",
+      "customerId": "cust-104",
+      "personalData": {
+        "firstName": "SANCTION",
+        "lastName": "Target"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:30:31.288Z",
+      "updatedAt": "2026-03-21T09:30:31.289Z"
+    }
+  ],
+  [
+    "90638c11-f40c-4e36-9ad6-51207265ce6e",
+    {
+      "screeningId": "90638c11-f40c-4e36-9ad6-51207265ce6e",
+      "customerId": "cust-105",
+      "personalData": {
+        "firstName": "Clean",
+        "lastName": "Name"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:30:31.397Z",
+      "updatedAt": "2026-03-21T09:30:31.397Z"
+    }
+  ],
+  [
+    "965e22d4-5e09-4248-955f-4e52e9e65ea9",
+    {
+      "screeningId": "965e22d4-5e09-4248-955f-4e52e9e65ea9",
+      "customerId": "cust-106",
+      "personalData": {
+        "firstName": "SANCTION",
+        "lastName": "Match"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:30:31.505Z",
+      "updatedAt": "2026-03-21T09:30:31.505Z"
+    }
+  ],
+  [
+    "9042edfd-42b4-4237-addc-3e1efe9a99ce",
+    {
+      "screeningId": "9042edfd-42b4-4237-addc-3e1efe9a99ce",
+      "customerId": "cust-110",
+      "personalData": {
+        "firstName": "Alice",
+        "lastName": "Wonder"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:30:31.615Z",
+      "updatedAt": "2026-03-21T09:30:31.615Z"
+    }
+  ],
+  [
+    "0f8d02cd-e666-428e-b94e-77f398ed4c99",
+    {
+      "screeningId": "0f8d02cd-e666-428e-b94e-77f398ed4c99",
+      "customerId": "cust-scrn-1774085431623",
+      "personalData": {
+        "firstName": "Bob",
+        "lastName": "One"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:30:31.724Z",
+      "updatedAt": "2026-03-21T09:30:31.724Z"
+    }
+  ],
+  [
+    "83353965-8e32-4abf-b0ec-42cb2124236a",
+    {
+      "screeningId": "83353965-8e32-4abf-b0ec-42cb2124236a",
+      "customerId": "cust-scrn-1774085431623",
+      "personalData": {
+        "firstName": "Bob",
+        "lastName": "Two"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:30:31.833Z",
+      "updatedAt": "2026-03-21T09:30:31.833Z"
+    }
+  ],
+  [
+    "22cfd1ea-4e32-48ee-9700-379c6f319b12",
+    {
+      "screeningId": "22cfd1ea-4e32-48ee-9700-379c6f319b12",
+      "customerId": "cust-scrn-1774085431623-other",
+      "personalData": {
+        "firstName": "Carol",
+        "lastName": "Other"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:30:31.941Z",
+      "updatedAt": "2026-03-21T09:30:31.941Z"
+    }
+  ],
+  [
+    "47c73ac5-0fd9-445e-bbfd-505f989ac33d",
+    {
+      "screeningId": "47c73ac5-0fd9-445e-bbfd-505f989ac33d",
+      "customerId": "cust-100",
+      "personalData": {
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:32:18.739Z",
+      "updatedAt": "2026-03-21T09:32:18.739Z"
+    }
+  ],
+  [
+    "7a144f26-405e-45ff-8b2e-e6a9798bda11",
+    {
+      "screeningId": "7a144f26-405e-45ff-8b2e-e6a9798bda11",
+      "customerId": "cust-101",
+      "personalData": {
+        "firstName": "SANCTION",
+        "lastName": "Person"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:32:18.849Z",
+      "updatedAt": "2026-03-21T09:32:18.849Z"
+    }
+  ],
+  [
+    "2aa5ddd2-ac29-4974-b56b-feb3b5a0d20e",
+    {
+      "screeningId": "2aa5ddd2-ac29-4974-b56b-feb3b5a0d20e",
+      "customerId": "cust-102",
+      "personalData": {
+        "firstName": "PEP",
+        "lastName": "Official"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:32:18.956Z",
+      "updatedAt": "2026-03-21T09:32:18.956Z"
+    }
+  ],
+  [
+    "a14a364c-f8e9-4b2a-8912-bea7d941ba60",
+    {
+      "screeningId": "a14a364c-f8e9-4b2a-8912-bea7d941ba60",
+      "customerId": "cust-103",
+      "personalData": {
+        "firstName": "Normal",
+        "lastName": "User"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:32:19.065Z",
+      "updatedAt": "2026-03-21T09:32:19.065Z"
+    }
+  ],
+  [
+    "0a5fd57b-c1fb-4c4d-92fb-4f867662e47e",
+    {
+      "screeningId": "0a5fd57b-c1fb-4c4d-92fb-4f867662e47e",
+      "customerId": "cust-104",
+      "personalData": {
+        "firstName": "SANCTION",
+        "lastName": "Target"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:32:19.173Z",
+      "updatedAt": "2026-03-21T09:32:19.173Z"
+    }
+  ],
+  [
+    "8ae7f5d6-a02c-4e5e-88f1-674f64367d56",
+    {
+      "screeningId": "8ae7f5d6-a02c-4e5e-88f1-674f64367d56",
+      "customerId": "cust-105",
+      "personalData": {
+        "firstName": "Clean",
+        "lastName": "Name"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:32:19.281Z",
+      "updatedAt": "2026-03-21T09:32:19.281Z"
+    }
+  ],
+  [
+    "1b50e201-1b0e-41d0-ae44-46742d847def",
+    {
+      "screeningId": "1b50e201-1b0e-41d0-ae44-46742d847def",
+      "customerId": "cust-106",
+      "personalData": {
+        "firstName": "SANCTION",
+        "lastName": "Match"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:32:19.389Z",
+      "updatedAt": "2026-03-21T09:32:19.389Z"
+    }
+  ],
+  [
+    "399d764b-2639-44ec-85ae-0c0d44de28f2",
+    {
+      "screeningId": "399d764b-2639-44ec-85ae-0c0d44de28f2",
+      "customerId": "cust-110",
+      "personalData": {
+        "firstName": "Alice",
+        "lastName": "Wonder"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:32:19.499Z",
+      "updatedAt": "2026-03-21T09:32:19.499Z"
+    }
+  ],
+  [
+    "cbd56aca-d7c7-459c-9b9e-2c0b0f0d303f",
+    {
+      "screeningId": "cbd56aca-d7c7-459c-9b9e-2c0b0f0d303f",
+      "customerId": "cust-scrn-1774085539505",
+      "personalData": {
+        "firstName": "Bob",
+        "lastName": "One"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:32:19.608Z",
+      "updatedAt": "2026-03-21T09:32:19.608Z"
+    }
+  ],
+  [
+    "b06c37a2-0704-4f55-94d4-d6bec647b1c3",
+    {
+      "screeningId": "b06c37a2-0704-4f55-94d4-d6bec647b1c3",
+      "customerId": "cust-scrn-1774085539505",
+      "personalData": {
+        "firstName": "Bob",
+        "lastName": "Two"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:32:19.716Z",
+      "updatedAt": "2026-03-21T09:32:19.716Z"
+    }
+  ],
+  [
+    "bef406cd-c750-46a0-9508-4d529ff0adf0",
+    {
+      "screeningId": "bef406cd-c750-46a0-9508-4d529ff0adf0",
+      "customerId": "cust-scrn-1774085539505-other",
+      "personalData": {
+        "firstName": "Carol",
+        "lastName": "Other"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:32:19.825Z",
+      "updatedAt": "2026-03-21T09:32:19.825Z"
+    }
+  ],
+  [
+    "d3d97ca1-89c3-4740-bc03-b942e40ace42",
+    {
+      "screeningId": "d3d97ca1-89c3-4740-bc03-b942e40ace42",
+      "customerId": "cust-100",
+      "personalData": {
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:33:34.872Z",
+      "updatedAt": "2026-03-21T09:33:34.872Z"
+    }
+  ],
+  [
+    "1d908994-6339-4c2b-9f2f-772dbea0d3e9",
+    {
+      "screeningId": "1d908994-6339-4c2b-9f2f-772dbea0d3e9",
+      "customerId": "cust-101",
+      "personalData": {
+        "firstName": "SANCTION",
+        "lastName": "Person"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:33:34.994Z",
+      "updatedAt": "2026-03-21T09:33:34.994Z"
+    }
+  ],
+  [
+    "55a1b5f1-5b0b-4544-81ce-1227e58274c7",
+    {
+      "screeningId": "55a1b5f1-5b0b-4544-81ce-1227e58274c7",
+      "customerId": "cust-102",
+      "personalData": {
+        "firstName": "PEP",
+        "lastName": "Official"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:33:35.110Z",
+      "updatedAt": "2026-03-21T09:33:35.110Z"
+    }
+  ],
+  [
+    "1eb959c5-c27a-46d7-81e6-2836f08adf87",
+    {
+      "screeningId": "1eb959c5-c27a-46d7-81e6-2836f08adf87",
+      "customerId": "cust-103",
+      "personalData": {
+        "firstName": "Normal",
+        "lastName": "User"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:33:35.232Z",
+      "updatedAt": "2026-03-21T09:33:35.232Z"
+    }
+  ],
+  [
+    "4ae84815-dda6-4313-b2b2-083ba4b9a151",
+    {
+      "screeningId": "4ae84815-dda6-4313-b2b2-083ba4b9a151",
+      "customerId": "cust-104",
+      "personalData": {
+        "firstName": "SANCTION",
+        "lastName": "Target"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:33:35.350Z",
+      "updatedAt": "2026-03-21T09:33:35.350Z"
+    }
+  ],
+  [
+    "aac44f0c-4593-4750-a824-9d04d427397e",
+    {
+      "screeningId": "aac44f0c-4593-4750-a824-9d04d427397e",
+      "customerId": "cust-105",
+      "personalData": {
+        "firstName": "Clean",
+        "lastName": "Name"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:33:35.459Z",
+      "updatedAt": "2026-03-21T09:33:35.459Z"
+    }
+  ],
+  [
+    "90217a32-7e6b-438d-9e21-0cf1a7ae4717",
+    {
+      "screeningId": "90217a32-7e6b-438d-9e21-0cf1a7ae4717",
+      "customerId": "cust-106",
+      "personalData": {
+        "firstName": "SANCTION",
+        "lastName": "Match"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:33:35.567Z",
+      "updatedAt": "2026-03-21T09:33:35.567Z"
+    }
+  ],
+  [
+    "02aae230-c235-4127-9b58-dbc068edf983",
+    {
+      "screeningId": "02aae230-c235-4127-9b58-dbc068edf983",
+      "customerId": "cust-110",
+      "personalData": {
+        "firstName": "Alice",
+        "lastName": "Wonder"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:33:35.676Z",
+      "updatedAt": "2026-03-21T09:33:35.676Z"
+    }
+  ],
+  [
+    "3bf1b5fb-4a80-43a6-8ccf-d52e332b56a5",
+    {
+      "screeningId": "3bf1b5fb-4a80-43a6-8ccf-d52e332b56a5",
+      "customerId": "cust-scrn-1774085615681",
+      "personalData": {
+        "firstName": "Bob",
+        "lastName": "One"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:33:35.783Z",
+      "updatedAt": "2026-03-21T09:33:35.783Z"
+    }
+  ],
+  [
+    "03672b44-3460-427f-b024-66921df55138",
+    {
+      "screeningId": "03672b44-3460-427f-b024-66921df55138",
+      "customerId": "cust-scrn-1774085615681",
+      "personalData": {
+        "firstName": "Bob",
+        "lastName": "Two"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:33:35.893Z",
+      "updatedAt": "2026-03-21T09:33:35.893Z"
+    }
+  ],
+  [
+    "969484ff-b94f-41e1-9a54-d6b486e9a845",
+    {
+      "screeningId": "969484ff-b94f-41e1-9a54-d6b486e9a845",
+      "customerId": "cust-scrn-1774085615681-other",
+      "personalData": {
+        "firstName": "Carol",
+        "lastName": "Other"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:33:36.001Z",
+      "updatedAt": "2026-03-21T09:33:36.001Z"
+    }
+  ],
+  [
+    "aad9907a-c891-4fd0-8fdf-2232ac472cb3",
+    {
+      "screeningId": "aad9907a-c891-4fd0-8fdf-2232ac472cb3",
+      "customerId": "cust-100",
+      "personalData": {
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:38:03.140Z",
+      "updatedAt": "2026-03-21T09:38:03.140Z"
+    }
+  ],
+  [
+    "ee16324e-fa3e-4900-a616-4d0395efda40",
+    {
+      "screeningId": "ee16324e-fa3e-4900-a616-4d0395efda40",
+      "customerId": "cust-101",
+      "personalData": {
+        "firstName": "SANCTION",
+        "lastName": "Person"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:38:03.250Z",
+      "updatedAt": "2026-03-21T09:38:03.250Z"
+    }
+  ],
+  [
+    "6ceda6f8-b9c5-48f9-828b-8bffaa0bee87",
+    {
+      "screeningId": "6ceda6f8-b9c5-48f9-828b-8bffaa0bee87",
+      "customerId": "cust-102",
+      "personalData": {
+        "firstName": "PEP",
+        "lastName": "Official"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:38:03.363Z",
+      "updatedAt": "2026-03-21T09:38:03.363Z"
+    }
+  ],
+  [
+    "d31bb5f5-dc1a-45fb-bfd6-a5fef6e76506",
+    {
+      "screeningId": "d31bb5f5-dc1a-45fb-bfd6-a5fef6e76506",
+      "customerId": "cust-103",
+      "personalData": {
+        "firstName": "Normal",
+        "lastName": "User"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:38:03.471Z",
+      "updatedAt": "2026-03-21T09:38:03.471Z"
+    }
+  ],
+  [
+    "bf8feebc-d05b-4261-9680-7f0eee52f0e2",
+    {
+      "screeningId": "bf8feebc-d05b-4261-9680-7f0eee52f0e2",
+      "customerId": "cust-104",
+      "personalData": {
+        "firstName": "SANCTION",
+        "lastName": "Target"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:38:03.581Z",
+      "updatedAt": "2026-03-21T09:38:03.581Z"
+    }
+  ],
+  [
+    "8fc2cbfe-c586-4d5c-919e-7508054629f6",
+    {
+      "screeningId": "8fc2cbfe-c586-4d5c-919e-7508054629f6",
+      "customerId": "cust-105",
+      "personalData": {
+        "firstName": "Clean",
+        "lastName": "Name"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:38:03.689Z",
+      "updatedAt": "2026-03-21T09:38:03.689Z"
+    }
+  ],
+  [
+    "172ae534-124d-4208-b90e-6bfb3a308687",
+    {
+      "screeningId": "172ae534-124d-4208-b90e-6bfb3a308687",
+      "customerId": "cust-106",
+      "personalData": {
+        "firstName": "SANCTION",
+        "lastName": "Match"
+      },
+      "result": "FLAGGED",
+      "checks": {
+        "sanctions": {
+          "result": "HIT",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "HIT",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 85,
+      "details": "Potential match found — manual review required",
+      "screenedAt": "2026-03-21T09:38:03.799Z",
+      "updatedAt": "2026-03-21T09:38:03.799Z"
+    }
+  ],
+  [
+    "2bf18589-486b-4c57-9706-aa0894580af4",
+    {
+      "screeningId": "2bf18589-486b-4c57-9706-aa0894580af4",
+      "customerId": "cust-110",
+      "personalData": {
+        "firstName": "Alice",
+        "lastName": "Wonder"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:38:03.910Z",
+      "updatedAt": "2026-03-21T09:38:03.910Z"
+    }
+  ],
+  [
+    "44877230-2e3d-425d-bbf6-9c91ac6e7235",
+    {
+      "screeningId": "44877230-2e3d-425d-bbf6-9c91ac6e7235",
+      "customerId": "cust-scrn-1774085883916",
+      "personalData": {
+        "firstName": "Bob",
+        "lastName": "One"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:38:04.021Z",
+      "updatedAt": "2026-03-21T09:38:04.021Z"
+    }
+  ],
+  [
+    "d1684bc5-5b5e-42d5-a2ec-2e48fe3ca2fe",
+    {
+      "screeningId": "d1684bc5-5b5e-42d5-a2ec-2e48fe3ca2fe",
+      "customerId": "cust-scrn-1774085883916",
+      "personalData": {
+        "firstName": "Bob",
+        "lastName": "Two"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:38:04.129Z",
+      "updatedAt": "2026-03-21T09:38:04.129Z"
+    }
+  ],
+  [
+    "48f76903-9d86-4933-8b99-7accb697fe27",
+    {
+      "screeningId": "48f76903-9d86-4933-8b99-7accb697fe27",
+      "customerId": "cust-scrn-1774085883916-other",
+      "personalData": {
+        "firstName": "Carol",
+        "lastName": "Other"
+      },
+      "result": "PASS",
+      "checks": {
+        "sanctions": {
+          "result": "CLEAR",
+          "source": "MockSanctionsList"
+        },
+        "pep": {
+          "result": "CLEAR",
+          "source": "MockPEPDatabase"
+        },
+        "adverseMedia": {
+          "result": "CLEAR",
+          "source": "MockMediaScan"
+        }
+      },
+      "riskScore": 12,
+      "details": "No adverse findings",
+      "screenedAt": "2026-03-21T09:38:04.239Z",
+      "updatedAt": "2026-03-21T09:38:04.239Z"
+    }
+  ]
+]

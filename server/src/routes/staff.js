@@ -1,0 +1,17 @@
+const router = require('express').Router();
+const { fineractApi } = require('../services/fineractClient');
+
+router.get('/', async (req, res, next) => {
+  try { const { data } = await fineractApi.get('/staff'); res.json(data); } catch (e) { next(e); }
+});
+router.get('/:id', async (req, res, next) => {
+  try { const { data } = await fineractApi.get(`/staff/${req.params.id}`); res.json(data); } catch (e) { next(e); }
+});
+router.post('/', async (req, res, next) => {
+  try { const { data } = await fineractApi.post('/staff', req.body); res.json(data); } catch (e) { next(e); }
+});
+router.put('/:id', async (req, res, next) => {
+  try { const { data } = await fineractApi.put(`/staff/${req.params.id}`, req.body); res.json(data); } catch (e) { next(e); }
+});
+
+module.exports = router;
