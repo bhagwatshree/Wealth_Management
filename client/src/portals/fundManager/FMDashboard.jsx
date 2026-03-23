@@ -25,10 +25,10 @@ export default function FMDashboard() {
   if (loading) return <LoadingSpinner />;
 
   const cards = [
-    { label: 'Loan Products', value: stats?.loanProducts, icon: <CreditCardIcon />, color: '#1565c0' },
-    { label: 'Savings Products', value: stats?.savingsProducts, icon: <SavingsIcon />, color: '#00897b' },
-    { label: 'Charges', value: stats?.charges, icon: <ReceiptIcon />, color: '#ef6c00' },
-    { label: 'Funds', value: stats?.funds, icon: <AccountBalanceWalletIcon />, color: '#6a1b9a' },
+    { label: 'Loan Products', value: stats?.loanProducts, icon: <CreditCardIcon />, color: '#E60000' },
+    { label: 'Savings Products', value: stats?.savingsProducts, icon: <SavingsIcon />, color: '#4CAF50' },
+    { label: 'Charges', value: stats?.charges, icon: <ReceiptIcon />, color: '#00695C' },
+    { label: 'Funds', value: stats?.funds, icon: <AccountBalanceWalletIcon />, color: '#990000' },
   ];
 
   return (

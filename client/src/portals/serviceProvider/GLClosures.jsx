@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
-import { Typography, Box } from '@mui/material';
-import { getGLClosures, createGLClosure, getOffices } from '../../api/serviceProviderApi';
+import { Typography, Box, IconButton } from '@mui/material';
+import EditIcon from '@mui/icons-material/Edit';
+import DeleteIcon from '@mui/icons-material/Delete';
+import { getGLClosures, createGLClosure, updateGLClosure, deleteGLClosure, getOffices } from '../../api/serviceProviderApi';
 import DataTable from '../../components/DataTable';
 import FormDialog from '../../components/FormDialog';
 import ErrorAlert from '../../components/ErrorAlert';
@@ -11,7 +13,7 @@ export default function GLClosures() {
   const [rows, setRows] = useState([]);
   const [offices, setOffices] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [dialog, setDialog] = useState(false);
+  const [dialog, setDialog] = useState({ open: false, edit: null });
   const [pageError, setPageError] = useState(null);
 
   const load = () => {
@@ -31,8 +33,14 @@ export default function GLClosures() {
   ];
 
   const handleSubmit = async (values) => {
-    await createGLClosure({ ...values, dateFormat: 'dd MMMM yyyy', locale: 'en', closingDate: toFineractDate(values.closingDate) });
+    const payload = { ...values, dateFormat: 'dd MMMM yyyy', locale: 'en', closingDate: toFineractDate(values.closingDate) };
+    if (dialog.edit) await updateGLClosure(dialog.edit.id, payload);
+    else await createGLClosure(payload);
     load();
+  };
+
+  const handleDelete = async (id) => {
+    try { await deleteGLClosure(id); load(); } catch (e) { setPageError(parseApiError(e)); }
   };
 
   const columns = [
@@ -40,14 +48,20 @@ export default function GLClosures() {
     { field: 'officeName', headerName: 'Office', flex: 1 },
     { field: 'closingDate', headerName: 'Closing Date', width: 150, valueFormatter: (v) => formatDate(v) },
     { field: 'comments', headerName: 'Comments', flex: 1 },
+    { field: 'actions', headerName: '', width: 100, sortable: false, renderCell: (params) => (
+      <>
+        <IconButton size="small" onClick={(e) => { e.stopPropagation(); setDialog({ open: true, edit: params.row }); }}><EditIcon fontSize="small" /></IconButton>
+        <IconButton size="small" onClick={(e) => { e.stopPropagation(); handleDelete(params.row.id); }}><DeleteIcon fontSize="small" /></IconButton>
+      </>
+    )},
   ];
 
   return (
     <Box>
       <Typography variant="h5" gutterBottom>GL Closures</Typography>
       {pageError && <ErrorAlert error={pageError} onClose={() => setPageError(null)} />}
-      <DataTable rows={rows} columns={columns} loading={loading} onAdd={() => setDialog(true)} addLabel="New Closure" />
-      <FormDialog open={dialog} title="Create GL Closure" fields={fields} onSubmit={handleSubmit} onClose={() => setDialog(false)} />
+      <DataTable rows={rows} columns={columns} loading={loading} onAdd={() => setDialog({ open: true, edit: null })} addLabel="New Closure" />
+      <FormDialog open={dialog.open} title={dialog.edit ? 'Edit Closure' : 'Create GL Closure'} fields={fields} initialValues={dialog.edit} onSubmit={handleSubmit} onClose={() => setDialog({ open: false, edit: null })} />
     </Box>
   );
 }

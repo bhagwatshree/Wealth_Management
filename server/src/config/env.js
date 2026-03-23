@@ -3,7 +3,7 @@ require('dotenv').config();
 module.exports = {
   port: process.env.PORT || 4000,
   fineract: {
-    baseUrl: process.env.FINERACT_BASE_URL || 'https://localhost:8443/fineract-provider/api/v1',
+    baseUrl: process.env.FINERACT_BASE_URL || 'http://localhost:8443/fineract-provider/api/v1',
     username: process.env.FINERACT_USERNAME || 'mifos',
     password: process.env.FINERACT_PASSWORD || 'password',
     tenantId: process.env.FINERACT_TENANT_ID || 'default',

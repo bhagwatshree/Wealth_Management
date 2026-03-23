@@ -5,6 +5,8 @@ const Store = require('../store/Store');
 const customerStore = require('../store/customerStore');
 
 const campaignStore = new Store('campaigns');
+// Tracks customers who have already received the welcome campaign (one-time only)
+const welcomeAvailedStore = new Store('welcomeAvailed');
 
 const CAMPAIGN_STATUS = {
   DRAFT: 'DRAFT',
@@ -100,23 +102,80 @@ function triggerCampaign(campaignId, targetCustomerIds) {
   return { campaignId, dispatched: dispatches.length, dispatches };
 }
 
-// Auto-trigger campaigns based on events
+// --- Welcome Campaign (one-time per customer) ---
+
+function triggerWelcomeCampaign(customerId) {
+  // Check if customer has already received the welcome campaign
+  if (welcomeAvailedStore.get(customerId)) {
+    return { alreadyAvailed: true, customerId };
+  }
+
+  // Find or create the welcome campaign
+  const campaigns = campaignStore.getAll();
+  let welcomeCampaign = campaigns.find((c) => c.name === 'Welcome Campaign');
+  if (!welcomeCampaign) {
+    welcomeCampaign = createCampaign({
+      name: 'Welcome Campaign',
+      description: 'One-time welcome for new customers',
+      channel: 'IN_APP',
+      offerType: 'INFORMATION',
+      offerTitle: 'Welcome to Wealth Management',
+      offerBody: 'Your account is now active. Explore our investment products.',
+    });
+  }
+
+  const result = triggerCampaign(welcomeCampaign.campaignId, [customerId]);
+
+  // Mark customer as availed — will not receive welcome campaign again
+  welcomeAvailedStore.set(customerId, {
+    customerId,
+    campaignId: welcomeCampaign.campaignId,
+    availedAt: new Date().toISOString(),
+  });
+
+  return { alreadyAvailed: false, ...result };
+}
+
+function hasAvailedWelcome(customerId) {
+  return !!welcomeAvailedStore.get(customerId);
+}
+
+// Auto-trigger campaigns based on events (excludes welcome — that is triggered separately)
 function setupEventTriggers() {
   eventBus.subscribe(events.KYC_VERIFIED, ({ payload }) => {
-    const campaigns = campaignStore.find((c) => c.triggerEvent === events.KYC_VERIFIED && c.status !== CAMPAIGN_STATUS.COMPLETED);
+    const campaigns = campaignStore.find(
+      (c) => c.triggerEvent === events.KYC_VERIFIED
+        && c.status !== CAMPAIGN_STATUS.COMPLETED
+        && c.name !== 'Welcome Campaign'
+    );
     campaigns.forEach((campaign) => {
       triggerCampaign(campaign.campaignId, [payload.customerId]);
     });
   });
 
   eventBus.subscribe(events.CRM_CUSTOMER_CREATED, ({ payload }) => {
-    const campaigns = campaignStore.find((c) => c.triggerEvent === events.CRM_CUSTOMER_CREATED && c.status !== CAMPAIGN_STATUS.COMPLETED);
+    const campaigns = campaignStore.find(
+      (c) => c.triggerEvent === events.CRM_CUSTOMER_CREATED
+        && c.status !== CAMPAIGN_STATUS.COMPLETED
+        && c.name !== 'Welcome Campaign'
+    );
     campaigns.forEach((campaign) => {
       triggerCampaign(campaign.campaignId, [payload.customerId]);
     });
+  });
+
+  // Welcome campaign triggers once when onboarding workflow completes (KYC + Screening done)
+  eventBus.subscribe(events.WORKFLOW_COMPLETED, ({ payload }) => {
+    if (payload.customerId) {
+      triggerWelcomeCampaign(payload.customerId);
+    }
   });
 }
 
 setupEventTriggers();
 
-module.exports = { createCampaign, getCampaign, getAllCampaigns, updateCampaignStatus, evaluateTargeting, triggerCampaign, CAMPAIGN_STATUS, CHANNELS };
+module.exports = {
+  createCampaign, getCampaign, getAllCampaigns, updateCampaignStatus,
+  evaluateTargeting, triggerCampaign, triggerWelcomeCampaign, hasAvailedWelcome,
+  CAMPAIGN_STATUS, CHANNELS,
+};

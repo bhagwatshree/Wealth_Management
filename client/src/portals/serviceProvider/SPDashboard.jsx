@@ -25,10 +25,10 @@ export default function SPDashboard() {
   if (loading) return <LoadingSpinner />;
 
   const cards = [
-    { label: 'Offices', value: stats?.offices, icon: <BusinessIcon />, color: '#1565c0' },
-    { label: 'Staff', value: stats?.staff, icon: <PeopleIcon />, color: '#00897b' },
-    { label: 'Clients', value: stats?.clients, icon: <PersonIcon />, color: '#ef6c00' },
-    { label: 'GL Accounts', value: stats?.glAccounts, icon: <AccountBalanceIcon />, color: '#6a1b9a' },
+    { label: 'Offices', value: stats?.offices, icon: <BusinessIcon />, color: '#E60000' },
+    { label: 'Staff', value: stats?.staff, icon: <PeopleIcon />, color: '#4CAF50' },
+    { label: 'Clients', value: stats?.clients, icon: <PersonIcon />, color: '#00695C' },
+    { label: 'GL Accounts', value: stats?.glAccounts, icon: <AccountBalanceIcon />, color: '#333333' },
   ];
 
   return (

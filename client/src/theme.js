@@ -1,10 +1,18 @@
 import { createTheme } from '@mui/material/styles';
 
+// Vodacom brand colors
+const vodacomRed = '#E60000';
+const vodacomDarkRed = '#990000';
+const mpesaGreen = '#4CAF50';
+const mpesaDarkGreen = '#00695C';
+const vodacomGrey = '#333333';
+
 const theme = createTheme({
   palette: {
-    primary: { main: '#1565c0' },
-    secondary: { main: '#00897b' },
-    background: { default: '#f5f7fa', paper: '#ffffff' },
+    primary: { main: vodacomRed, dark: vodacomDarkRed },
+    secondary: { main: mpesaGreen, dark: mpesaDarkGreen },
+    background: { default: '#f5f5f5', paper: '#ffffff' },
+    text: { primary: vodacomGrey },
   },
   typography: {
     fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
@@ -23,7 +31,21 @@ const theme = createTheme({
         root: { textTransform: 'none', borderRadius: 8, fontWeight: 500 },
       },
     },
+    MuiAppBar: {
+      styleOverrides: {
+        root: { backgroundColor: '#ffffff' },
+      },
+    },
   },
 });
 
 export default theme;
+
+// Export brand colors for direct use
+export const brandColors = {
+  vodacomRed,
+  vodacomDarkRed,
+  mpesaGreen,
+  mpesaDarkGreen,
+  vodacomGrey,
+};

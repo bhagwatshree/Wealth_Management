@@ -4,8 +4,6 @@ const events = require('../../events/eventTypes');
 const workflowStore = require('../store/workflowStore');
 const kycService = require('../services/kycService');
 const screeningService = require('../services/screeningService');
-const crmService = require('../services/crmService');
-const cvmService = require('../services/cvmService');
 
 const WORKFLOW_STATUS = {
   IN_PROGRESS: 'IN_PROGRESS',
@@ -25,8 +23,6 @@ async function startOnboarding(customerData) {
     steps: [
       { name: 'KYC_SUBMISSION', status: 'PENDING', result: null, startedAt: null, completedAt: null },
       { name: 'SCREENING', status: 'PENDING', result: null, startedAt: null, completedAt: null },
-      { name: 'CRM_CREATION', status: 'PENDING', result: null, startedAt: null, completedAt: null },
-      { name: 'WELCOME_CAMPAIGN', status: 'PENDING', result: null, startedAt: null, completedAt: null },
     ],
     customerData,
     createdAt: new Date().toISOString(),
@@ -34,14 +30,33 @@ async function startOnboarding(customerData) {
 
   workflowStore.set(workflowId, workflow);
 
-  // Execute step 1: KYC
-  await executeStep(workflowId, 0);
-  return workflow;
+  // Execute steps — errors are caught so the route doesn't crash
+  try {
+    await executeStep(workflowId, 0);
+  } catch (err) {
+    console.error(`[Onboarding] Workflow ${workflowId} failed:`, err.message);
+    workflow.status = WORKFLOW_STATUS.FAILED;
+    workflow.error = err.message;
+    workflowStore.set(workflowId, workflow);
+  }
+
+  // Return the latest workflow state
+  return workflowStore.get(workflowId) || workflow;
 }
 
 async function executeStep(workflowId, stepIndex) {
   const workflow = workflowStore.get(workflowId);
-  if (!workflow || stepIndex >= workflow.steps.length) return;
+  if (!workflow) {
+    console.error(`[Onboarding] Workflow ${workflowId} not found in store`);
+    return;
+  }
+  if (stepIndex >= workflow.steps.length) {
+    // All steps done
+    workflow.status = WORKFLOW_STATUS.COMPLETED;
+    workflowStore.set(workflowId, workflow);
+    eventBus.publish(events.WORKFLOW_COMPLETED, { workflowId, customerId: workflow.customerId });
+    return;
+  }
 
   const step = workflow.steps[stepIndex];
   step.status = 'IN_PROGRESS';
@@ -61,11 +76,13 @@ async function executeStep(workflowId, stepIndex) {
         step.result = result;
         step.status = 'COMPLETED';
         step.completedAt = new Date().toISOString();
+        // KYC is submitted as PENDING — SP admin must verify via ManageKYC
+        // Screening runs automatically after KYC is verified
+        workflow.status = WORKFLOW_STATUS.IN_PROGRESS;
         workflowStore.set(workflowId, workflow);
-
-        // Auto-verify for workflow (in production, this waits for manual verification)
-        await kycService.verifyKyc(result.kycId, 'APPROVE', 'Auto-approved via onboarding workflow');
-        break;
+        console.log(`[Onboarding] KYC submitted (${result.kycId}), awaiting SP admin verification`);
+        // Do NOT advance to screening yet — wait for KYC verification event
+        return;
 
       case 'SCREENING':
         result = await screeningService.screenCustomer(workflow.customerId, {
@@ -90,52 +107,6 @@ async function executeStep(workflowId, stepIndex) {
         step.completedAt = new Date().toISOString();
         workflowStore.set(workflowId, workflow);
         break;
-
-      case 'CRM_CREATION':
-        // Get KYC and screening results from previous steps
-        const kycResult = workflow.steps[0].result;
-        const screeningResult = workflow.steps[1].result;
-
-        result = await crmService.createCustomerProfile(workflow.customerId, {
-          firstName: workflow.customerData.firstName,
-          lastName: workflow.customerData.lastName,
-          email: workflow.customerData.email,
-          mobileNo: workflow.customerData.mobileNo,
-          kyc: { kycId: kycResult?.kycId, status: 'VERIFIED' },
-          screening: { screeningId: screeningResult?.screeningId, result: screeningResult?.result },
-          fineractClientId: kycResult?.fineractClientId || null,
-          segment: workflow.customerData.segment || 'STANDARD',
-        });
-        step.result = { profileId: result.profileId };
-        step.status = 'COMPLETED';
-        step.completedAt = new Date().toISOString();
-        workflowStore.set(workflowId, workflow);
-        break;
-
-      case 'WELCOME_CAMPAIGN':
-        // Find or create a welcome campaign
-        const campaigns = cvmService.getAllCampaigns();
-        let welcomeCampaign = campaigns.find((c) => c.name === 'Welcome Campaign');
-        if (!welcomeCampaign) {
-          welcomeCampaign = cvmService.createCampaign({
-            name: 'Welcome Campaign',
-            description: 'Automated welcome for new customers',
-            channel: 'IN_APP',
-            offerType: 'INFORMATION',
-            offerTitle: 'Welcome to Wealth Management',
-            offerBody: 'Your account is now active. Explore our investment products.',
-          });
-        }
-        result = cvmService.triggerCampaign(welcomeCampaign.campaignId, [workflow.customerId]);
-        step.result = { campaignId: welcomeCampaign.campaignId, dispatched: result.dispatched };
-        step.status = 'COMPLETED';
-        step.completedAt = new Date().toISOString();
-
-        // All steps done
-        workflow.status = WORKFLOW_STATUS.COMPLETED;
-        workflowStore.set(workflowId, workflow);
-        eventBus.publish(events.WORKFLOW_COMPLETED, { workflowId, customerId: workflow.customerId });
-        return;
     }
 
     // Advance to next step
@@ -159,4 +130,34 @@ function getAllWorkflows() {
   return workflowStore.getAll();
 }
 
-module.exports = { startOnboarding, getWorkflowStatus, getAllWorkflows, WORKFLOW_STATUS };
+/**
+ * Initialize event listeners for the onboarding workflow.
+ * When KYC is verified by SP admin, automatically run the screening step.
+ */
+function init() {
+  eventBus.subscribe(events.KYC_VERIFIED, async (event) => {
+    const customerId = event.payload?.customerId;
+    if (!customerId) return;
+
+    // Find the onboarding workflow for this customer that is still in progress
+    const allWorkflows = workflowStore.getAll();
+    const workflow = allWorkflows.find(
+      (w) => w.customerId === customerId && w.type === 'ONBOARDING' && w.status === 'IN_PROGRESS'
+    );
+    if (!workflow) {
+      console.log(`[Onboarding] No in-progress workflow found for ${customerId} after KYC verified`);
+      return;
+    }
+
+    console.log(`[Onboarding] KYC verified for ${customerId}, advancing to screening step`);
+    try {
+      await executeStep(workflow.workflowId, 1); // Run screening
+    } catch (err) {
+      console.error(`[Onboarding] Screening step failed for ${customerId}:`, err.message);
+    }
+  });
+
+  console.log('[Onboarding] Onboarding workflow event listeners initialized');
+}
+
+module.exports = { startOnboarding, getWorkflowStatus, getAllWorkflows, init, WORKFLOW_STATUS };

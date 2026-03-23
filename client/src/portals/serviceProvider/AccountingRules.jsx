@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
-import { Typography, Box } from '@mui/material';
-import { getAccountingRules, createAccountingRule, getOffices, getGLAccounts } from '../../api/serviceProviderApi';
+import { Typography, Box, IconButton } from '@mui/material';
+import EditIcon from '@mui/icons-material/Edit';
+import DeleteIcon from '@mui/icons-material/Delete';
+import { getAccountingRules, createAccountingRule, updateAccountingRule, deleteAccountingRule, getOffices, getGLAccounts } from '../../api/serviceProviderApi';
 import DataTable from '../../components/DataTable';
 import FormDialog from '../../components/FormDialog';
 import ErrorAlert from '../../components/ErrorAlert';
@@ -11,7 +13,7 @@ export default function AccountingRules() {
   const [offices, setOffices] = useState([]);
   const [glAccounts, setGlAccounts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [dialog, setDialog] = useState(false);
+  const [dialog, setDialog] = useState({ open: false, edit: null });
   const [pageError, setPageError] = useState(null);
 
   const load = () => {
@@ -33,8 +35,13 @@ export default function AccountingRules() {
   ];
 
   const handleSubmit = async (values) => {
-    await createAccountingRule(values);
+    if (dialog.edit) await updateAccountingRule(dialog.edit.id, values);
+    else await createAccountingRule(values);
     load();
+  };
+
+  const handleDelete = async (id) => {
+    try { await deleteAccountingRule(id); load(); } catch (e) { setPageError(parseApiError(e)); }
   };
 
   const columns = [
@@ -42,14 +49,20 @@ export default function AccountingRules() {
     { field: 'officeName', headerName: 'Office', flex: 1 },
     { field: 'debitAccountName', headerName: 'Debit Account', flex: 1, valueGetter: (v, row) => row.debitAccounts?.[0]?.name || '' },
     { field: 'creditAccountName', headerName: 'Credit Account', flex: 1, valueGetter: (v, row) => row.creditAccounts?.[0]?.name || '' },
+    { field: 'actions', headerName: '', width: 100, sortable: false, renderCell: (params) => (
+      <>
+        <IconButton size="small" onClick={(e) => { e.stopPropagation(); setDialog({ open: true, edit: params.row }); }}><EditIcon fontSize="small" /></IconButton>
+        <IconButton size="small" onClick={(e) => { e.stopPropagation(); handleDelete(params.row.id); }}><DeleteIcon fontSize="small" /></IconButton>
+      </>
+    )},
   ];
 
   return (
     <Box>
       <Typography variant="h5" gutterBottom>Accounting Rules</Typography>
       {pageError && <ErrorAlert error={pageError} onClose={() => setPageError(null)} />}
-      <DataTable rows={rows} columns={columns} loading={loading} onAdd={() => setDialog(true)} addLabel="New Rule" />
-      <FormDialog open={dialog} title="Create Accounting Rule" fields={fields} onSubmit={handleSubmit} onClose={() => setDialog(false)} />
+      <DataTable rows={rows} columns={columns} loading={loading} onAdd={() => setDialog({ open: true, edit: null })} addLabel="New Rule" />
+      <FormDialog open={dialog.open} title={dialog.edit ? 'Edit Rule' : 'Create Accounting Rule'} fields={fields} initialValues={dialog.edit} onSubmit={handleSubmit} onClose={() => setDialog({ open: false, edit: null })} />
     </Box>
   );
 }

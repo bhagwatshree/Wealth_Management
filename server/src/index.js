@@ -33,8 +33,11 @@ app.get('/api/error-config', (req, res) => {
 app.use('/api/offices', require('./routes/offices'));
 app.use('/api/staff', require('./routes/staff'));
 app.use('/api/clients', require('./routes/clients'));
+app.use('/api/client-documents', require('./routes/clientDocuments'));
 app.use('/api/loan-products', require('./routes/loanProducts'));
 app.use('/api/savings-products', require('./routes/savingsProducts'));
+app.use('/api/savingsaccounts', require('./routes/savingsAccounts'));
+app.use('/api/loans', require('./routes/loans'));
 app.use('/api/charges', require('./routes/charges'));
 app.use('/api/funds', require('./routes/funds'));
 app.use('/api/gl-accounts', require('./routes/glAccounts'));
@@ -46,6 +49,31 @@ app.use('/api/payment-types', require('./routes/paymentTypes'));
 app.use('/api/reports', require('./routes/reports'));
 app.use('/api/audits', require('./routes/audits'));
 app.use('/api/financial-activity-accounts', require('./routes/financialActivity'));
+app.use('/api/holidays', require('./routes/holidays'));
+app.use('/api/working-days', require('./routes/workingDays'));
+app.use('/api/tellers', require('./routes/tellers'));
+app.use('/api/fixed-deposit-products', require('./routes/fixedDepositProducts'));
+app.use('/api/recurring-deposit-products', require('./routes/recurringDepositProducts'));
+app.use('/api/share-products', require('./routes/shareProducts'));
+app.use('/api/floating-rates', require('./routes/floatingRates'));
+app.use('/api/products-mix', require('./routes/productsMix'));
+app.use('/api/collaterals', require('./routes/collaterals'));
+app.use('/api/tax-components', require('./routes/taxComponents'));
+app.use('/api/tax-groups', require('./routes/taxGroups'));
+app.use('/api/delinquency-ranges', require('./routes/delinquencyRanges'));
+app.use('/api/delinquency-buckets', require('./routes/delinquencyBuckets'));
+app.use('/api/codes', require('./routes/codes'));
+app.use('/api/roles', require('./routes/roles'));
+app.use('/api/data-tables', require('./routes/dataTables'));
+app.use('/api/maker-checker', require('./routes/makerChecker'));
+app.use('/api/scheduler-jobs', require('./routes/schedulerJobs'));
+app.use('/api/configurations', require('./routes/configurations'));
+app.use('/api/account-number-preferences', require('./routes/accountNumberPreferences'));
+app.use('/api/external-services', require('./routes/externalServices'));
+app.use('/api/hooks', require('./routes/hooks'));
+app.use('/api/financial-activity-mappings', require('./routes/financialActivityMappings'));
+app.use('/api/provisioning-entries', require('./routes/provisioningEntries'));
+app.use('/api/provisioning-criteria', require('./routes/provisioningCriteria'));
 
 // Routes — Orchestration Layer (DxL)
 app.use('/api/dxl/kyc', require('./orchestration/routes/kycRoutes'));
@@ -54,6 +82,10 @@ app.use('/api/dxl/screening', require('./orchestration/routes/screeningRoutes'))
 app.use('/api/dxl/crm', require('./orchestration/routes/crmRoutes'));
 app.use('/api/dxl/cvm', require('./orchestration/routes/cvmRoutes'));
 app.use('/api/dxl/workflows', require('./orchestration/routes/workflowRoutes'));
+app.use('/api/dxl/account', require('./orchestration/routes/accountRoutes'));
+app.use('/api/dxl/customers', require('./orchestration/routes/customerRoutes'));
+app.use('/api/dxl/applications', require('./orchestration/routes/applicationRoutes'));
+app.use('/api/dxl/transactions', require('./orchestration/routes/transactionRoutes'));
 
 // Routes — Offer Management (independent module)
 app.use('/api/offers/products', require('./offers/routes/productCatalogRoutes'));
@@ -85,6 +117,8 @@ app.get('/api/tmf', (req, res) => {
 // Initialize event-driven subsystems
 require('./events/eventBus');
 require('./orchestration/workflows/campaignTriggerWorkflow').init();
+require('./orchestration/workflows/applicationProvisioningWorkflow').init();
+require('./orchestration/workflows/onboardingWorkflow').init();
 require('./offers/services/batchScheduler').init();
 
 // TMF error handler (before generic handler, handles TMF routes)

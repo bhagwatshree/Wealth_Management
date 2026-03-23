@@ -52,4 +52,23 @@ router.get('/campaigns/:id/targeting', async (req, res, next) => {
   } catch (e) { next(e); }
 });
 
+// POST /api/dxl/cvm/welcome/:customerId — trigger one-time welcome campaign (admin use)
+router.post('/welcome/:customerId', async (req, res, next) => {
+  try {
+    const result = cvmService.triggerWelcomeCampaign(req.params.customerId);
+    if (result.alreadyAvailed) {
+      return res.json({ message: 'Welcome campaign already availed', customerId: result.customerId });
+    }
+    res.json(result);
+  } catch (e) { next(e); }
+});
+
+// GET /api/dxl/cvm/welcome/:customerId/status — check if customer has availed welcome campaign
+router.get('/welcome/:customerId/status', async (req, res, next) => {
+  try {
+    const availed = cvmService.hasAvailedWelcome(req.params.customerId);
+    res.json({ customerId: req.params.customerId, welcomeAvailed: availed });
+  } catch (e) { next(e); }
+});
+
 module.exports = router;

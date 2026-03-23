@@ -74,26 +74,92 @@ async function verifyKyc(kycId, decision, notes) {
     record.steps.forEach((s) => (s.status = 'COMPLETED'));
     kycStore.set(kycId, record);
 
-    // Create client in Fineract
+    // Find or create Fineract client (client should already exist from signup)
     let fineractClientId = null;
+    const email = record.customerId || '';
+    const firstname = record.data.firstName || 'Unknown';
+    const lastname = record.data.lastName || 'Unknown';
+
+    // 1. Search by externalId (email)
     try {
-      const clientPayload = {
-        officeId: 1,
-        firstname: record.data.firstName || 'Unknown',
-        lastname: record.data.lastName || 'Unknown',
-        mobileNo: record.data.mobileNo || '',
-        active: true,
-        activationDate: formatFineractDate(new Date()),
-        dateFormat: 'dd MMMM yyyy',
-        locale: 'en',
-      };
-      const { data } = await fineractApi.post('/clients', clientPayload);
-      fineractClientId = data.clientId || data.resourceId;
-      record.fineractClientId = fineractClientId;
-      kycStore.set(kycId, record);
+      const { data } = await fineractApi.get('/clients', {
+        params: { externalId: email, limit: 5 },
+      });
+      const clients = data.pageItems || data;
+      if (Array.isArray(clients)) {
+        const active = clients.find(c => c.status?.value !== 'Closed' && c.status?.id !== 600);
+        if (active) {
+          fineractClientId = active.id;
+          console.log(`[KYC] Found existing Fineract client ${fineractClientId} for ${email}`);
+        }
+      }
     } catch (err) {
-      console.error('[KYC] Fineract client creation failed:', err.message);
+      console.log('[KYC] Client search by externalId failed:', err.message);
     }
+
+    // 2. Fallback: search by displayName
+    if (!fineractClientId) {
+      try {
+        const { data } = await fineractApi.get('/clients', {
+          params: { displayName: `${firstname} ${lastname}`, limit: 5 },
+        });
+        const clients = data.pageItems || data;
+        if (Array.isArray(clients)) {
+          const active = clients.find(c => c.status?.value !== 'Closed' && c.status?.id !== 600);
+          if (active) {
+            fineractClientId = active.id;
+            console.log(`[KYC] Found existing Fineract client ${fineractClientId} by name`);
+          }
+        }
+      } catch (err) {
+        console.log('[KYC] Client search by name failed:', err.message);
+      }
+    }
+
+    // 3. Last resort: create new client
+    if (!fineractClientId) {
+      try {
+        const clientPayload = {
+          officeId: 1,
+          legalFormId: 1,
+          firstname,
+          lastname,
+          mobileNo: record.data.mobileNo || '',
+          externalId: email,
+          active: true,
+          activationDate: formatFineractDate(new Date()),
+          dateFormat: 'dd MMMM yyyy',
+          locale: 'en',
+        };
+        const { data } = await fineractApi.post('/clients', clientPayload);
+        fineractClientId = data.clientId || data.resourceId;
+        console.log(`[KYC] Created new Fineract client ${fineractClientId} for ${email}`);
+      } catch (err) {
+        console.error('[KYC] Fineract client creation failed:', err.message);
+      }
+    }
+
+    // Save address to Fineract client if available
+    if (fineractClientId && record.data.address) {
+      try {
+        const addr = record.data.address;
+        await fineractApi.post(`/client/${fineractClientId}/addresses`, {
+          addressLine1: addr.addressLine1 || '',
+          addressLine2: addr.addressLine2 || '',
+          city: addr.city || '',
+          stateProvinceId: addr.stateProvinceId || undefined,
+          countryId: addr.countryId || undefined,
+          postalCode: addr.postalCode || '',
+          addressTypeId: 36, // Residential
+        });
+        console.log(`[KYC] Address saved to Fineract client ${fineractClientId}`);
+      } catch (err) {
+        console.warn('[KYC] Address save to Fineract failed (non-critical):', err.message);
+      }
+    }
+
+    record.fineractClientId = fineractClientId;
+    kycStore.set(kycId, record);
 
     eventBus.publish(events.KYC_VERIFIED, {
       kycId,

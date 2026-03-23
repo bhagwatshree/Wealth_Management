@@ -2,9 +2,12 @@ import { useEffect, useState, useCallback } from 'react';
 import {
   Typography, Box, Chip, Stack,
   Dialog, DialogTitle, DialogContent, DialogActions, Button,
-  Grid, Divider,
+  Grid, Divider, TextField, Alert,
 } from '@mui/material';
+import SendIcon from '@mui/icons-material/Send';
 import { getProducts, getProduct, getNav } from '../../api/offersApi';
+import { submitApplication } from '../../api/orchestrationApi';
+import { useAuth } from '../../hooks/useAuth';
 import DataTable from '../../components/DataTable';
 import ErrorAlert from '../../components/ErrorAlert';
 import usePageData from '../../hooks/usePageData';
@@ -29,7 +32,11 @@ const riskColor = (level) => {
 };
 
 export default function WealthProducts() {
+  const { user } = useAuth();
   const [categoryFilter, setCategoryFilter] = useState(null);
+  const [applyForm, setApplyForm] = useState({ amount: '', notes: '' });
+  const [applying, setApplying] = useState(false);
+  const [applySuccess, setApplySuccess] = useState(false);
 
   const fetchProducts = useCallback(() => {
     const params = { status: 'ACTIVE' };
@@ -73,6 +80,30 @@ export default function WealthProducts() {
     setDetailDialog({ open: false, product: null });
     setDetailError(null);
     setNavData(null);
+    setApplyForm({ amount: '', notes: '' });
+  };
+
+  const handleApplyWealth = async () => {
+    if (!detailDialog.product) return;
+    setApplying(true);
+    try {
+      await submitApplication({
+        customerId: user?.email || user?.name,
+        customerName: user?.name,
+        customerEmail: user?.email,
+        type: 'WEALTH_PRODUCT',
+        productId: detailDialog.product.id,
+        productName: detailDialog.product.name || '',
+        amount: applyForm.amount || null,
+        notes: applyForm.notes,
+      });
+      closeDetail();
+      setApplySuccess(true);
+    } catch (e) {
+      setDetailError(parseApiError(e));
+    } finally {
+      setApplying(false);
+    }
   };
 
   const columns = [
@@ -114,6 +145,11 @@ export default function WealthProducts() {
       <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
         Browse available wealth and investment products.
       </Typography>
+      {applySuccess && (
+        <Alert severity="success" sx={{ mb: 2 }} onClose={() => setApplySuccess(false)}>
+          Application submitted! Track it under "My Applications".
+        </Alert>
+      )}
       {pageError && <ErrorAlert error={pageError} onClose={clearPageError} />}
 
       {/* Category Filter Chips */}
@@ -216,11 +252,41 @@ export default function WealthProducts() {
                   )}
                 </>
               )}
+
+              {/* Apply Section */}
+              <Divider sx={{ my: 2 }} />
+              <Typography variant="subtitle2" gutterBottom>Apply for this Product</Typography>
+              <Alert severity="info" sx={{ mb: 2 }} variant="outlined">
+                KYC is not required to apply. Your request will be sent for admin review.
+              </Alert>
+              <TextField
+                label="Investment Amount"
+                type="number"
+                fullWidth
+                size="small"
+                sx={{ mb: 1.5 }}
+                value={applyForm.amount}
+                onChange={(e) => setApplyForm((f) => ({ ...f, amount: e.target.value }))}
+              />
+              <TextField
+                label="Notes (optional)"
+                fullWidth
+                size="small"
+                multiline
+                rows={2}
+                value={applyForm.notes}
+                onChange={(e) => setApplyForm((f) => ({ ...f, notes: e.target.value }))}
+              />
             </Box>
           ) : null}
         </DialogContent>
         <DialogActions>
           <Button onClick={closeDetail}>Close</Button>
+          {p && (
+            <Button variant="contained" startIcon={<SendIcon />} onClick={handleApplyWealth} disabled={applying}>
+              {applying ? 'Submitting...' : 'Apply Now'}
+            </Button>
+          )}
         </DialogActions>
       </Dialog>
     </Box>

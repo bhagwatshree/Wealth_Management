@@ -18,5 +18,5 @@ const navItems = [
 ];
 
 export default function FundManagerLayout() {
-  return <AppLayout navItems={navItems} portalName="Fund Manager Portal" portalColor="#00897b" />;
+  return <AppLayout navItems={navItems} portalName="Fund Manager Portal" portalColor="#00695C" />;
 }
