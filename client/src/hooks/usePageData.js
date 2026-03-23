@@ -20,7 +20,9 @@ export default function usePageData(fetchFn, transform) {
     setLoading(true);
     setPageError(null);
     fetchFn()
-      .then(data => {
+      .then(res => {
+        // Handle both raw axios responses (have .config) and pre-extracted data
+        const data = res?.config && res?.data !== undefined ? res.data : res;
         setRows(transform ? transform(data) : data);
       })
       .catch(err => {
